@@ -10,4 +10,8 @@
 
 @interface Lugar : NSObject
 
+@property(strong,nonatomic) NSMutableArray *actividades;
+
+-(void)darActividades:(NSString *) actividades;
+
 @end

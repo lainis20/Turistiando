@@ -10,4 +10,9 @@
 
 @implementation Lugar
 
+-(void)darActividades:(NSString *)actividades
+{
+    
+}
+
 @end

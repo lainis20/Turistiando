@@ -9,6 +9,9 @@
 #import "Turistiando.h"
 
 @implementation Turistiando
--(void)
+-(void)darLugares:(Lugar *)lugar
+{
+    
+}
 
 @end

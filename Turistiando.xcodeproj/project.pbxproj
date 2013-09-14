@@ -23,6 +23,8 @@
 		8FD7B26E17E4D0C200C42776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24917E4D0C200C42776 /* Foundation.framework */; };
 		8FD7B27617E4D0C200C42776 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8FD7B27417E4D0C200C42776 /* InfoPlist.strings */; };
 		8FD7B27917E4D0C200C42776 /* TuristiandoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7B27817E4D0C200C42776 /* TuristiandoTests.m */; };
+		8FD7B28517E4D67000C42776 /* Turistiando.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7B28417E4D67000C42776 /* Turistiando.m */; };
+		8FD7B28817E4D84900C42776 /* Lugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7B28717E4D84900C42776 /* Lugar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		8FD7B27517E4D0C200C42776 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8FD7B27717E4D0C200C42776 /* TuristiandoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuristiandoTests.h; sourceTree = "<group>"; };
 		8FD7B27817E4D0C200C42776 /* TuristiandoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TuristiandoTests.m; sourceTree = "<group>"; };
+		8FD7B28317E4D67000C42776 /* Turistiando.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Turistiando.h; sourceTree = "<group>"; };
+		8FD7B28417E4D67000C42776 /* Turistiando.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Turistiando.m; sourceTree = "<group>"; };
+		8FD7B28617E4D84900C42776 /* Lugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lugar.h; sourceTree = "<group>"; };
+		8FD7B28717E4D84900C42776 /* Lugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lugar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 		8FD7B24D17E4D0C200C42776 /* Turistiando */ = {
 			isa = PBXGroup;
 			children = (
+				8FD7B28217E4D65000C42776 /* mundo */,
 				8FD7B25617E4D0C200C42776 /* AppDelegate.h */,
 				8FD7B25717E4D0C200C42776 /* AppDelegate.m */,
 				8FD7B25F17E4D0C200C42776 /* MainStoryboard.storyboard */,
@@ -158,6 +165,17 @@
 				8FD7B27417E4D0C200C42776 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FD7B28217E4D65000C42776 /* mundo */ = {
+			isa = PBXGroup;
+			children = (
+				8FD7B28317E4D67000C42776 /* Turistiando.h */,
+				8FD7B28417E4D67000C42776 /* Turistiando.m */,
+				8FD7B28617E4D84900C42776 /* Lugar.h */,
+				8FD7B28717E4D84900C42776 /* Lugar.m */,
+			);
+			name = mundo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +291,8 @@
 				8FD7B25417E4D0C200C42776 /* main.m in Sources */,
 				8FD7B25817E4D0C200C42776 /* AppDelegate.m in Sources */,
 				8FD7B26417E4D0C200C42776 /* ViewController.m in Sources */,
+				8FD7B28517E4D67000C42776 /* Turistiando.m in Sources */,
+				8FD7B28817E4D84900C42776 /* Lugar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

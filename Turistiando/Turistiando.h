@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "Lugar.h"
+#import "Diccionario.h"
 
 @interface Turistiando : NSObject
 
 @property(strong,nonatomic) NSMutableArray *lugares;
 
--(void)darLugares:(Lugar *) lugar;
+-(NSMutableArray *)darLugares;
+
+
 
 @end

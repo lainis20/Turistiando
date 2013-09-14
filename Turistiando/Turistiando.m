@@ -9,9 +9,12 @@
 #import "Turistiando.h"
 
 @implementation Turistiando
--(void)darLugares:(Lugar *)lugar
+
+@synthesize lugares=_lugares;
+
+-(NSMutableArray *)darLugares;
 {
-    
+    return self.lugares;
 }
 
 @end

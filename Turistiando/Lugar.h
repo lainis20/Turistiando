@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Diccionario.h"
 
 @interface Lugar : NSObject
 
 @property(strong,nonatomic) NSMutableArray *actividades;
+@property(strong,nonatomic) Diccionario *diccionario;
+
 
 -(void)darActividades:(NSString *) actividades;
+
+-(void)agregarActividadAdiccionario:(NSString *) actividad;
+
 
 @end

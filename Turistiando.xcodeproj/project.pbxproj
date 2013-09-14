@@ -25,6 +25,7 @@
 		8FD7B27917E4D0C200C42776 /* TuristiandoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7B27817E4D0C200C42776 /* TuristiandoTests.m */; };
 		8FD7B28517E4D67000C42776 /* Turistiando.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7B28417E4D67000C42776 /* Turistiando.m */; };
 		8FD7B28817E4D84900C42776 /* Lugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7B28717E4D84900C42776 /* Lugar.m */; };
+		8FD7B28B17E4DD7000C42776 /* Diccionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7B28A17E4DD7000C42776 /* Diccionario.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		8FD7B28417E4D67000C42776 /* Turistiando.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Turistiando.m; sourceTree = "<group>"; };
 		8FD7B28617E4D84900C42776 /* Lugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lugar.h; sourceTree = "<group>"; };
 		8FD7B28717E4D84900C42776 /* Lugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lugar.m; sourceTree = "<group>"; };
+		8FD7B28917E4DD7000C42776 /* Diccionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diccionario.h; sourceTree = "<group>"; };
+		8FD7B28A17E4DD7000C42776 /* Diccionario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diccionario.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,8 @@
 				8FD7B28417E4D67000C42776 /* Turistiando.m */,
 				8FD7B28617E4D84900C42776 /* Lugar.h */,
 				8FD7B28717E4D84900C42776 /* Lugar.m */,
+				8FD7B28917E4DD7000C42776 /* Diccionario.h */,
+				8FD7B28A17E4DD7000C42776 /* Diccionario.m */,
 			);
 			name = mundo;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				8FD7B26417E4D0C200C42776 /* ViewController.m in Sources */,
 				8FD7B28517E4D67000C42776 /* Turistiando.m in Sources */,
 				8FD7B28817E4D84900C42776 /* Lugar.m in Sources */,
+				8FD7B28B17E4DD7000C42776 /* Diccionario.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

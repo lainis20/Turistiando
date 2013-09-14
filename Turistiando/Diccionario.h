@@ -7,14 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Actividad.h"
 
 @interface Diccionario : NSObject
 
 @property (strong,nonatomic) NSMutableArray *actividades;
 
--(void)agregarActividad: (NSString *)actividad;
 
--(void)eliminarActividad: (NSString *)actividad;
+-(void)agregarActividad: (Actividad *)actividad;
+
+-(void)eliminarActividad: (Actividad *)actividad;
+
+-(NSMutableArray*)darActividades;
 
 
 @end

@@ -12,6 +12,22 @@
 
 @synthesize lugares=_lugares;
 
+static Turistiando * instancia = nil;
+
++(Turistiando *)darInstancia
+{
+    if (instancia == nil) {
+        instancia = [[Turistiando alloc] init];
+        [instancia inicializar];
+    }
+    return instancia;
+}
+
+-(void)inicializar
+{
+    lugares = [[NSMutableArray alloc] init];
+}
+
 -(NSMutableArray *)darLugares;
 {
     return self.lugares;

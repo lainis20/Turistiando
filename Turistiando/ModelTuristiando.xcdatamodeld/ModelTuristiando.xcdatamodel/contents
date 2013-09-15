@@ -9,7 +9,7 @@
         <relationship name="lugar" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Lugar" inverseName="actividades" inverseEntity="Lugar" syncable="YES"/>
     </entity>
     <entity name="Diccionario" syncable="YES">
-        <relationship name="actividades" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Actividad" syncable="YES"/>
+        <relationship name="actividades" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Actividad" syncable="YES"/>
         <relationship name="lugar" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Lugar" syncable="YES"/>
     </entity>
     <entity name="Lugar" syncable="YES">

@@ -128,6 +128,7 @@
 		8FD7B24D17E4D0C200C42776 /* Turistiando */ = {
 			isa = PBXGroup;
 			children = (
+				FA98DC6B17E4E76F007DB23A /* Interfaz */,
 				8FD7B28217E4D65000C42776 /* mundo */,
 				8FD7B25617E4D0C200C42776 /* AppDelegate.h */,
 				8FD7B25717E4D0C200C42776 /* AppDelegate.m */,
@@ -142,6 +143,7 @@
 		8FD7B24E17E4D0C200C42776 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA98DC6C17E4E7EE007DB23A /* libreriasOpen */,
 				8FD7B24F17E4D0C200C42776 /* Turistiando-Info.plist */,
 				8FD7B25017E4D0C200C42776 /* InfoPlist.strings */,
 				8FD7B25317E4D0C200C42776 /* main.m */,
@@ -184,6 +186,38 @@
 				8F58098017E60E0100A66D40 /* ModelTuristiando.xcdatamodeld */,
 			);
 			name = mundo;
+			sourceTree = "<group>";
+		};
+		FA98DC6B17E4E76F007DB23A /* Interfaz */ = {
+			isa = PBXGroup;
+			children = (
+				FA98DC7617E4EBE0007DB23A /* TablaIndiceViewController.h */,
+				FA98DC7717E4EBE0007DB23A /* TablaIndiceViewController.m */,
+				FA197A9617E5856B0000813D /* CiudadOpcionViewController.h */,
+				FA197A9717E5856B0000813D /* CiudadOpcionViewController.m */,
+				FA197A9917E5913F0000813D /* DiccionarioViewController.h */,
+				FA197A9A17E5913F0000813D /* DiccionarioViewController.m */,
+				FA5D0A8517E59F4700577E21 /* VerElementoDViewController.h */,
+				FA5D0A8617E59F4700577E21 /* VerElementoDViewController.m */,
+				FA5D0A8817E5A09100577E21 /* ComunidadViewController.h */,
+				FA5D0A8917E5A09100577E21 /* ComunidadViewController.m */,
+				FA5D0A8B17E5A6EC00577E21 /* NoticiasViewController.h */,
+				FA5D0A8C17E5A6EC00577E21 /* NoticiasViewController.m */,
+			);
+			name = Interfaz;
+			sourceTree = "<group>";
+		};
+		FA98DC6C17E4E7EE007DB23A /* libreriasOpen */ = {
+			isa = PBXGroup;
+			children = (
+				FA98DC6D17E4E8F1007DB23A /* SWRevealViewController.h */,
+				FA98DC7017E4E9B8007DB23A /* IAPuzzleBoard.h */,
+				FA98DC7117E4E9B8007DB23A /* IAPuzzleBoard.m */,
+				FA98DC7217E4E9B8007DB23A /* IAPuzzleBoardView.h */,
+				FA98DC7317E4E9B8007DB23A /* IAPuzzleBoardView.m */,
+				FA98DC6E17E4E8F1007DB23A /* SWRevealViewController.m */,
+			);
+			name = libreriasOpen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +330,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5D0A8F17E5AA9E00577E21 /* IAPuzzleBoard.m in Sources */,
+				FA5D0A8E17E5AA9800577E21 /* SWRevealViewController.m in Sources */,
 				8FD7B25417E4D0C200C42776 /* main.m in Sources */,
 				8FD7B25817E4D0C200C42776 /* AppDelegate.m in Sources */,
 				8FD7B26417E4D0C200C42776 /* ViewController.m in Sources */,
@@ -311,6 +347,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FD7B27917E4D0C200C42776 /* TuristiandoTests.m in Sources */,
+				FA98DC6F17E4E8F1007DB23A /* SWRevealViewController.m in Sources */,
+				FA98DC7417E4E9B8007DB23A /* IAPuzzleBoard.m in Sources */,
+				FA98DC7517E4E9B8007DB23A /* IAPuzzleBoardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

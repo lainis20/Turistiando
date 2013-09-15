@@ -11,13 +11,13 @@
 @implementation Lugar
 
 @synthesize diccionario = _diccionario;
-
+@synthesize actividades = _actividades;
 -(NSMutableArray *)darActividades:(NSString *) actividades;
 {
     return [self.diccionario darActividades];
 }
 
--(void)agregarActividadAdiccionario:(NSString *) actividad;
+-(void)agregarActividadAdiccionario:(Actividad *) actividad;
 {
     [self.diccionario agregarActividad:actividad];
 }

@@ -10,12 +10,12 @@
     </entity>
     <entity name="Diccionario" syncable="YES">
         <relationship name="actividades" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Actividad" syncable="YES"/>
-        <relationship name="lugar" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Lugar" syncable="YES"/>
+        <relationship name="lugar" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Lugar" inverseName="diccionario" inverseEntity="Lugar" syncable="YES"/>
     </entity>
     <entity name="Lugar" syncable="YES">
         <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="actividades" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Actividad" inverseName="lugar" inverseEntity="Actividad" syncable="YES"/>
-        <relationship name="diccionario" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Diccionario" syncable="YES"/>
+        <relationship name="diccionario" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Diccionario" inverseName="lugar" inverseEntity="Diccionario" syncable="YES"/>
     </entity>
     <elements>
         <element name="Lugar" positionX="-83" positionY="-63" width="128" height="88"/>

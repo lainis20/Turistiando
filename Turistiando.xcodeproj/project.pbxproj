@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F6B8ABA17E4EA6B003D40DB /* Actividad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B8AB917E4EA6B003D40DB /* Actividad.m */; };
 		8FD7B24817E4D0C200C42776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24717E4D0C200C42776 /* UIKit.framework */; };
 		8FD7B24A17E4D0C200C42776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24917E4D0C200C42776 /* Foundation.framework */; };
 		8FD7B24C17E4D0C200C42776 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24B17E4D0C200C42776 /* CoreGraphics.framework */; };
@@ -45,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F6B8AB817E4EA6B003D40DB /* Actividad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actividad.h; sourceTree = "<group>"; };
+		8F6B8AB917E4EA6B003D40DB /* Actividad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Actividad.m; sourceTree = "<group>"; };
 		8FD7B24417E4D0C200C42776 /* Turistiando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turistiando.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD7B24717E4D0C200C42776 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8FD7B24917E4D0C200C42776 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -199,6 +202,8 @@
 				8FD7B28717E4D84900C42776 /* Lugar.m */,
 				8FD7B28917E4DD7000C42776 /* Diccionario.h */,
 				8FD7B28A17E4DD7000C42776 /* Diccionario.m */,
+				8F6B8AB817E4EA6B003D40DB /* Actividad.h */,
+				8F6B8AB917E4EA6B003D40DB /* Actividad.m */,
 			);
 			name = mundo;
 			sourceTree = "<group>";

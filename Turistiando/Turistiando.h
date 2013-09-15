@@ -10,10 +10,25 @@
 #import "Lugar.h"
 #import "Diccionario.h"
 
-@interface Turistiando : NSObject
+@interface Turistiando : NSObject{
+@private
+
+ /*! 
+  lista de lugares
+  */
+    NSMutableArray *lugares;
+}
 
 @property(strong,nonatomic) NSMutableArray *lugares;
 
+/*!
+ @method retorna la instancia de la clase
+ */
++(Turistiando *)darInstancia;
+
+/*!
+ @method retorna todos los lugares de Turistiando
+ */
 -(NSMutableArray *)darLugares;
 
 

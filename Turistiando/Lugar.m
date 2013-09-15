@@ -10,9 +10,16 @@
 
 @implementation Lugar
 
--(void)darActividades:(NSString *)actividades
+@synthesize diccionario = _diccionario;
+
+-(NSMutableArray *)darActividades:(NSString *) actividades;
 {
-    
+    return [self.diccionario darActividades];
+}
+
+-(void)agregarActividadAdiccionario:(NSString *) actividad;
+{
+    [self.diccionario agregarActividad:actividad];
 }
 
 @end

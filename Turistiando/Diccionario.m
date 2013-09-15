@@ -9,14 +9,22 @@
 #import "Diccionario.h"
 
 @implementation Diccionario
--(void)agregarActividad: (NSString *)actividad;
+
+@synthesize actividades = _actividades;
+
+-(void)agregarActividad: (Actividad *)actividad;
 {
-    
+    [self.actividades addObject:(actividad)];
 }
 
--(void)eliminarActividad: (NSString *)actividad;
+-(void)eliminarActividad: (Actividad *)actividad;
 {
-    
+    [self.actividades delete:(actividad)];
+}
+
+-(NSMutableArray*)darActividades;
+{
+    return _actividades;
 }
 
 @end

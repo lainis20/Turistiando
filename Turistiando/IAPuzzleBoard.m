@@ -242,7 +242,6 @@
         [self moveTile:moveThisTile];
     }
     
-    [validMoves release];
 }
 
 /*
@@ -271,7 +270,6 @@
 */
 - (void)dealloc {
     self.tiles = nil;    
-    [super dealloc];
 }
 
 @end

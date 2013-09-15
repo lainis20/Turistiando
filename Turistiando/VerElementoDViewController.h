@@ -1,5 +1,5 @@
 //
-//  CiudadOpcionViewController.h
+//  VerElementoDViewController.h
 //  Turistiando
 //
 //  Created by Macias on 15/09/13.
@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 
-@interface CiudadOpcionViewController : ViewController
+@interface VerElementoDViewController : ViewController
 
-@property (strong, nonatomic) IBOutlet UIBarButtonItem *buttonBarMenu;
 @end

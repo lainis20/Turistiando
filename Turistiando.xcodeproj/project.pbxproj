@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F6B8ABA17E4EA6B003D40DB /* Actividad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B8AB917E4EA6B003D40DB /* Actividad.m */; };
 		8FD7B24817E4D0C200C42776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24717E4D0C200C42776 /* UIKit.framework */; };
 		8FD7B24A17E4D0C200C42776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24917E4D0C200C42776 /* Foundation.framework */; };
 		8FD7B24C17E4D0C200C42776 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24B17E4D0C200C42776 /* CoreGraphics.framework */; };
@@ -29,6 +28,11 @@
 		8FD7B28B17E4DD7000C42776 /* Diccionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7B28A17E4DD7000C42776 /* Diccionario.m */; };
 		FA197A9817E5856B0000813D /* CiudadOpcionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA197A9717E5856B0000813D /* CiudadOpcionViewController.m */; };
 		FA197A9B17E5913F0000813D /* DiccionarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA197A9A17E5913F0000813D /* DiccionarioViewController.m */; };
+		FA5D0A8717E59F4700577E21 /* VerElementoDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5D0A8617E59F4700577E21 /* VerElementoDViewController.m */; };
+		FA5D0A8A17E5A09100577E21 /* ComunidadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5D0A8917E5A09100577E21 /* ComunidadViewController.m */; };
+		FA5D0A8D17E5A6EC00577E21 /* NoticiasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5D0A8C17E5A6EC00577E21 /* NoticiasViewController.m */; };
+		FA5D0A8E17E5AA9800577E21 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC6E17E4E8F1007DB23A /* SWRevealViewController.m */; };
+		FA5D0A8F17E5AA9E00577E21 /* IAPuzzleBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC7117E4E9B8007DB23A /* IAPuzzleBoard.m */; };
 		FA98DC6F17E4E8F1007DB23A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC6E17E4E8F1007DB23A /* SWRevealViewController.m */; };
 		FA98DC7417E4E9B8007DB23A /* IAPuzzleBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC7117E4E9B8007DB23A /* IAPuzzleBoard.m */; };
 		FA98DC7517E4E9B8007DB23A /* IAPuzzleBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC7317E4E9B8007DB23A /* IAPuzzleBoardView.m */; };
@@ -80,6 +84,12 @@
 		FA197A9717E5856B0000813D /* CiudadOpcionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CiudadOpcionViewController.m; sourceTree = "<group>"; };
 		FA197A9917E5913F0000813D /* DiccionarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiccionarioViewController.h; sourceTree = "<group>"; };
 		FA197A9A17E5913F0000813D /* DiccionarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiccionarioViewController.m; sourceTree = "<group>"; };
+		FA5D0A8517E59F4700577E21 /* VerElementoDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerElementoDViewController.h; sourceTree = "<group>"; };
+		FA5D0A8617E59F4700577E21 /* VerElementoDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerElementoDViewController.m; sourceTree = "<group>"; };
+		FA5D0A8817E5A09100577E21 /* ComunidadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComunidadViewController.h; sourceTree = "<group>"; };
+		FA5D0A8917E5A09100577E21 /* ComunidadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComunidadViewController.m; sourceTree = "<group>"; };
+		FA5D0A8B17E5A6EC00577E21 /* NoticiasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticiasViewController.h; sourceTree = "<group>"; };
+		FA5D0A8C17E5A6EC00577E21 /* NoticiasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticiasViewController.m; sourceTree = "<group>"; };
 		FA98DC6D17E4E8F1007DB23A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		FA98DC6E17E4E8F1007DB23A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		FA98DC7017E4E9B8007DB23A /* IAPuzzleBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPuzzleBoard.h; sourceTree = "<group>"; };
@@ -217,6 +227,12 @@
 				FA197A9717E5856B0000813D /* CiudadOpcionViewController.m */,
 				FA197A9917E5913F0000813D /* DiccionarioViewController.h */,
 				FA197A9A17E5913F0000813D /* DiccionarioViewController.m */,
+				FA5D0A8517E59F4700577E21 /* VerElementoDViewController.h */,
+				FA5D0A8617E59F4700577E21 /* VerElementoDViewController.m */,
+				FA5D0A8817E5A09100577E21 /* ComunidadViewController.h */,
+				FA5D0A8917E5A09100577E21 /* ComunidadViewController.m */,
+				FA5D0A8B17E5A6EC00577E21 /* NoticiasViewController.h */,
+				FA5D0A8C17E5A6EC00577E21 /* NoticiasViewController.m */,
 			);
 			name = Interfaz;
 			sourceTree = "<group>";
@@ -344,6 +360,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5D0A8F17E5AA9E00577E21 /* IAPuzzleBoard.m in Sources */,
+				FA5D0A8E17E5AA9800577E21 /* SWRevealViewController.m in Sources */,
 				8FD7B25417E4D0C200C42776 /* main.m in Sources */,
 				8FD7B25817E4D0C200C42776 /* AppDelegate.m in Sources */,
 				8FD7B26417E4D0C200C42776 /* ViewController.m in Sources */,
@@ -353,6 +371,9 @@
 				FA98DC7817E4EBE0007DB23A /* TablaIndiceViewController.m in Sources */,
 				FA197A9817E5856B0000813D /* CiudadOpcionViewController.m in Sources */,
 				FA197A9B17E5913F0000813D /* DiccionarioViewController.m in Sources */,
+				FA5D0A8717E59F4700577E21 /* VerElementoDViewController.m in Sources */,
+				FA5D0A8A17E5A09100577E21 /* ComunidadViewController.m in Sources */,
+				FA5D0A8D17E5A6EC00577E21 /* NoticiasViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

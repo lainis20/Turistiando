@@ -1,29 +1,27 @@
 //
-//  CiudadOpcionViewController.m
+//  ComunidadViewController.m
 //  Turistiando
 //
 //  Created by Macias on 15/09/13.
 //  Copyright (c) 2013 Turistiando Colombia. All rights reserved.
 //
 
-#import "CiudadOpcionViewController.h"
+#import "ComunidadViewController.h"
 #import "SWRevealViewController.h"
 
-@interface CiudadOpcionViewController ()
+@interface ComunidadViewController ()
 
 @end
 
-@implementation CiudadOpcionViewController
+@implementation ComunidadViewController
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
     self.buttonBarMenu.target = self.revealViewController;
     self.buttonBarMenu.action = @selector(revealToggle:);
     
-    // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 	// Do any additional setup after loading the view.
 }

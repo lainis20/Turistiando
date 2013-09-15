@@ -10,4 +10,6 @@
 
 @interface TablaIndiceViewController : UITableViewController
 
+@property (strong, nonatomic) NSArray * menu;
+
 @end

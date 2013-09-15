@@ -1,5 +1,5 @@
 //
-//  CiudadOpcionViewController.h
+//  ComunidadViewController.h
 //  Turistiando
 //
 //  Created by Macias on 15/09/13.
@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface CiudadOpcionViewController : ViewController
-
+@interface ComunidadViewController : ViewController
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *buttonBarMenu;
+
 @end

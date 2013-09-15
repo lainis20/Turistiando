@@ -20,7 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.menu = @[@"titulo",@"noticias", @"ciudades", @"comunidad"];
+    self.menu = @[@"titulo",@"perfil", @"ciudades",@"ciudad" @"comunidad"];
 	// Do any additional setup after loading the view.
 }
 

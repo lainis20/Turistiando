@@ -39,6 +39,8 @@
 		FA98DC7417E4E9B8007DB23A /* IAPuzzleBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC7117E4E9B8007DB23A /* IAPuzzleBoard.m */; };
 		FA98DC7517E4E9B8007DB23A /* IAPuzzleBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC7317E4E9B8007DB23A /* IAPuzzleBoardView.m */; };
 		FA98DC7817E4EBE0007DB23A /* TablaIndiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC7717E4EBE0007DB23A /* TablaIndiceViewController.m */; };
+		FAC7822417E633170006E578 /* IntroHijoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7822217E633170006E578 /* IntroHijoViewController.m */; };
+		FAC7822517E633170006E578 /* IntroHijoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC7822317E633170006E578 /* IntroHijoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,9 @@
 		FA98DC7317E4E9B8007DB23A /* IAPuzzleBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPuzzleBoardView.m; sourceTree = "<group>"; };
 		FA98DC7617E4EBE0007DB23A /* TablaIndiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablaIndiceViewController.h; sourceTree = "<group>"; };
 		FA98DC7717E4EBE0007DB23A /* TablaIndiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TablaIndiceViewController.m; sourceTree = "<group>"; };
+		FAC7822117E633170006E578 /* IntroHijoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroHijoViewController.h; sourceTree = "<group>"; };
+		FAC7822217E633170006E578 /* IntroHijoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroHijoViewController.m; sourceTree = "<group>"; };
+		FAC7822317E633170006E578 /* IntroHijoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroHijoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +240,9 @@
 				FA5D0A8917E5A09100577E21 /* ComunidadViewController.m */,
 				FA5D0A8B17E5A6EC00577E21 /* NoticiasViewController.h */,
 				FA5D0A8C17E5A6EC00577E21 /* NoticiasViewController.m */,
+				FAC7822117E633170006E578 /* IntroHijoViewController.h */,
+				FAC7822217E633170006E578 /* IntroHijoViewController.m */,
+				FAC7822317E633170006E578 /* IntroHijoViewController.xib */,
 			);
 			name = Interfaz;
 			sourceTree = "<group>";
@@ -328,6 +336,7 @@
 				8FD7B25C17E4D0C200C42776 /* Default@2x.png in Resources */,
 				8FD7B25E17E4D0C200C42776 /* Default-568h@2x.png in Resources */,
 				8FD7B26117E4D0C200C42776 /* MainStoryboard.storyboard in Resources */,
+				FAC7822517E633170006E578 /* IntroHijoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +385,7 @@
 				FA5D0A8717E59F4700577E21 /* VerElementoDViewController.m in Sources */,
 				FA5D0A8A17E5A09100577E21 /* ComunidadViewController.m in Sources */,
 				FA5D0A8D17E5A6EC00577E21 /* NoticiasViewController.m in Sources */,
+				FAC7822417E633170006E578 /* IntroHijoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

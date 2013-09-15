@@ -29,7 +29,7 @@
 /*!
  @method retorna la lista de las actividades que tiene el lugar
  */
--(NSMutableArray *)darActividades:(NSString *) actividades;
+-(NSMutableArray *)darActividades;
 
 /*!
  @method permite agregar una actividad del lugar al diccionario 

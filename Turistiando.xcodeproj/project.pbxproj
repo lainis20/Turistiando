@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F58098217E60E0100A66D40 /* ModelTuristiando.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F58098017E60E0100A66D40 /* ModelTuristiando.xcdatamodeld */; };
-		8F6B8ABA17E4EA6B003D40DB /* Actividad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B8AB917E4EA6B003D40DB /* Actividad.m */; };
+		8F8BA10D17E65CD30087CA78 /* Diccionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8BA10C17E65CD30087CA78 /* Diccionario.m */; };
 		8FD7B24817E4D0C200C42776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24717E4D0C200C42776 /* UIKit.framework */; };
 		8FD7B24A17E4D0C200C42776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24917E4D0C200C42776 /* Foundation.framework */; };
 		8FD7B24C17E4D0C200C42776 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24B17E4D0C200C42776 /* CoreGraphics.framework */; };
@@ -57,6 +56,8 @@
 		8F58098117E60E0100A66D40 /* ModelTuristiando.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelTuristiando.xcdatamodel; sourceTree = "<group>"; };
 		8F6B8AB817E4EA6B003D40DB /* Actividad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actividad.h; sourceTree = "<group>"; };
 		8F6B8AB917E4EA6B003D40DB /* Actividad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Actividad.m; sourceTree = "<group>"; };
+		8F8BA10B17E65CD30087CA78 /* Diccionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diccionario.h; sourceTree = "<group>"; };
+		8F8BA10C17E65CD30087CA78 /* Diccionario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diccionario.m; sourceTree = "<group>"; };
 		8FD7B24417E4D0C200C42776 /* Turistiando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turistiando.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD7B24717E4D0C200C42776 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8FD7B24917E4D0C200C42776 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -83,7 +84,6 @@
 		8FD7B28417E4D67000C42776 /* Turistiando.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Turistiando.m; sourceTree = "<group>"; };
 		8FD7B28617E4D84900C42776 /* Lugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lugar.h; sourceTree = "<group>"; };
 		8FD7B28717E4D84900C42776 /* Lugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lugar.m; sourceTree = "<group>"; };
-		8FD7B28917E4DD7000C42776 /* Diccionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diccionario.h; sourceTree = "<group>"; };
 		8FD7B28A17E4DD7000C42776 /* Diccionario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diccionario.m; sourceTree = "<group>"; };
 		FA197A9617E5856B0000813D /* CiudadOpcionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CiudadOpcionViewController.h; sourceTree = "<group>"; };
 		FA197A9717E5856B0000813D /* CiudadOpcionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CiudadOpcionViewController.m; sourceTree = "<group>"; };
@@ -221,6 +221,8 @@
 				8F6B8AB817E4EA6B003D40DB /* Actividad.h */,
 				8F6B8AB917E4EA6B003D40DB /* Actividad.m */,
 				8F58098017E60E0100A66D40 /* ModelTuristiando.xcdatamodeld */,
+				8F8BA10B17E65CD30087CA78 /* Diccionario.h */,
+				8F8BA10C17E65CD30087CA78 /* Diccionario.m */,
 			);
 			name = mundo;
 			sourceTree = "<group>";
@@ -386,6 +388,7 @@
 				FA5D0A8A17E5A09100577E21 /* ComunidadViewController.m in Sources */,
 				FA5D0A8D17E5A6EC00577E21 /* NoticiasViewController.m in Sources */,
 				FAC7822417E633170006E578 /* IntroHijoViewController.m in Sources */,
+				8F8BA10D17E65CD30087CA78 /* Diccionario.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

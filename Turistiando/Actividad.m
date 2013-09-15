@@ -25,5 +25,18 @@
     return self.fecha;
 }
 
+-(BOOL *)darRealizada;
+{
+    return self
+}
 
+-(long) darLatitud;
+{
+    return self
+}
+
+-(long) darLongitud;
+{
+    
+}
 @end

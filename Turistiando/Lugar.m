@@ -12,7 +12,8 @@
 
 @synthesize diccionario = _diccionario;
 @synthesize actividades = _actividades;
--(NSMutableArray *)darActividades:(NSString *) actividades;
+
+-(NSMutableArray *)darActividades;
 {
     return [self.diccionario darActividades];
 }

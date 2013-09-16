@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F4B551317E75C1C0014B891 /* NSActividad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B551217E75C1C0014B891 /* NSActividad.m */; };
+		8F4B551917E75C740014B891 /* NSDiccionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B551817E75C740014B891 /* NSDiccionario.m */; };
+		8F4B551C17E75C830014B891 /* NSLugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B551B17E75C830014B891 /* NSLugar.m */; };
 		8F8BA10D17E65CD30087CA78 /* Diccionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8BA10C17E65CD30087CA78 /* Diccionario.m */; };
 		8FD7B24817E4D0C200C42776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24717E4D0C200C42776 /* UIKit.framework */; };
 		8FD7B24A17E4D0C200C42776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24917E4D0C200C42776 /* Foundation.framework */; };
@@ -52,6 +55,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F4B551117E75C1C0014B891 /* NSActividad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSActividad.h; sourceTree = "<group>"; };
+		8F4B551217E75C1C0014B891 /* NSActividad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSActividad.m; sourceTree = "<group>"; };
+		8F4B551717E75C740014B891 /* NSDiccionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDiccionario.h; sourceTree = "<group>"; };
+		8F4B551817E75C740014B891 /* NSDiccionario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDiccionario.m; sourceTree = "<group>"; };
+		8F4B551A17E75C830014B891 /* NSLugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLugar.h; sourceTree = "<group>"; };
+		8F4B551B17E75C830014B891 /* NSLugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLugar.m; sourceTree = "<group>"; };
 		8F58098117E60E0100A66D40 /* ModelTuristiando.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelTuristiando.xcdatamodel; sourceTree = "<group>"; };
 		8F6B8AB817E4EA6B003D40DB /* Actividad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actividad.h; sourceTree = "<group>"; };
 		8F6B8AB917E4EA6B003D40DB /* Actividad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Actividad.m; sourceTree = "<group>"; };
@@ -130,6 +139,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F4B550A17E75B650014B891 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				8F4B551117E75C1C0014B891 /* NSActividad.h */,
+				8F4B551217E75C1C0014B891 /* NSActividad.m */,
+				8F4B551717E75C740014B891 /* NSDiccionario.h */,
+				8F4B551817E75C740014B891 /* NSDiccionario.m */,
+				8F4B551A17E75C830014B891 /* NSLugar.h */,
+				8F4B551B17E75C830014B891 /* NSLugar.m */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
 		8FD7B23B17E4D0C200C42776 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +185,7 @@
 		8FD7B24D17E4D0C200C42776 /* Turistiando */ = {
 			isa = PBXGroup;
 			children = (
+				8F4B550A17E75B650014B891 /* Persistence */,
 				FA98DC6B17E4E76F007DB23A /* Interfaz */,
 				8FD7B28217E4D65000C42776 /* mundo */,
 				8FD7B25617E4D0C200C42776 /* AppDelegate.h */,
@@ -386,6 +409,9 @@
 				FA5D0A8D17E5A6EC00577E21 /* NoticiasViewController.m in Sources */,
 				FAC7822417E633170006E578 /* IntroHijoViewController.m in Sources */,
 				8F8BA10D17E65CD30087CA78 /* Diccionario.m in Sources */,
+				8F4B551317E75C1C0014B891 /* NSActividad.m in Sources */,
+				8F4B551917E75C740014B891 /* NSDiccionario.m in Sources */,
+				8F4B551C17E75C830014B891 /* NSLugar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,12 @@
 
 @interface IntroHijoViewController : ViewController
 
-@property (assign,nonatomic) NSInteger *indice;
+@property (assign,nonatomic) NSUInteger indice;
+@property (weak, nonatomic) IBOutlet UIButton *buttonE;
+@property (weak, nonatomic) IBOutlet UITextField *txtNombre;
+@property (weak, nonatomic) IBOutlet UITextField *txtNacio;
+@property (weak, nonatomic) IBOutlet UILabel *lblnombre;
+@property (weak, nonatomic) IBOutlet UILabel *lblNacio;
+@property (weak, nonatomic) IBOutlet UILabel *lblTitulo4;
 
 @end

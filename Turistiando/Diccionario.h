@@ -33,11 +33,6 @@
 
 
 /*!
- @method retorna la lista de las actividades que tiene el diccionario
- */
--(NSMutableArray *)darActividades;
-
-/*!
  @method permite agregar una actividad al diccionario
  */
 -(void)agregarActividad:(Actividad *) actividad;
@@ -45,11 +40,11 @@
 /*!
  @method retorna la lista de las actividades del diccionario que se han realizado
  */
--(NSMutableArray *)darActividadesRealizadas;
+//-(NSMutableArray *)darActividadesRealizadas;
 
 /*!
  @method retorna la lista de las actividades del diccionario que NO se han realizado
  */
--(NSMutableArray *)darActividadesNOrealizadas;
+//-(NSMutableArray *)darActividadesNOrealizadas;
 
 @end

@@ -14,10 +14,6 @@
 @synthesize actividades = _actividades;
 @synthesize nombreL= _nombreL;
 
--(NSMutableArray *)darActividades
-{
-    return [self.diccionario darActividades];
-}
 
 -(void)agregarActividadAdiccionario:(Actividad *) actividad
 {

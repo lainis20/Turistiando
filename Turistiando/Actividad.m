@@ -10,20 +10,9 @@
 
 @implementation Actividad
 
--(void)cambiarFecha:(NSString *) fecha
-{
-    self.fecha = fecha;
-}
-
--(NSString *) darNombre
-{
-    return self.nombre;
-}
-
--(NSString *)darFecha
-{
-    return self.fecha;
-}
+@synthesize fecha = _fecha;
+@synthesize nombre = _nombre;
+@synthesize fecha = _fecha;
 
 -(BOOL *)darRealizada
 {
@@ -39,4 +28,5 @@
 {
    // return self.;
 }
+
 @end

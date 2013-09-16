@@ -31,10 +31,7 @@
 @property(strong,nonatomic) NSMutableArray *actividades;
 @property(strong,nonatomic) Diccionario *diccionario;
 @property(strong,nonatomic) NSString *nombreL;
-/*!
- @method retorna la lista de las actividades que tiene el lugar
- */
--(NSMutableArray *)darActividades;
+
 
 /*!
  @method permite agregar una actividad del lugar al diccionario 

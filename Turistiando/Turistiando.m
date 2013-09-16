@@ -28,9 +28,5 @@ static Turistiando * instancia = nil;
     lugares = [[NSMutableArray alloc] init];
 }
 
--(NSMutableArray *)darLugares
-{
-    return self.lugares;
-}
 
 @end

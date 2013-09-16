@@ -38,24 +38,10 @@
 
 @property (strong,nonatomic) NSString *fecha;
 @property (strong,nonatomic) NSString *nombre;
-@property (nonatomic,nonatomic) BOOL *realizada;
+@property (nonatomic) BOOL *realizada;
 @property (nonatomic) long *latitud;
 @property (nonatomic) long *longitud;
 
-/*!
- @method cambia la fecha de la actividad por la que entra por parametro
- */
--(void)cambiarFecha:(NSString *) fecha;
-
-/*!
- @method retorna el nombre de la actividad
- */
--(NSString *)darNombre;
-
-/*!
- @method retorna la fecha de la actividad
- */
--(NSString *)darFecha;
 
 /*!
  @method retorna si ha sido realizada

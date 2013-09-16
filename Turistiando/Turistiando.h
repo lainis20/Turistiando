@@ -26,11 +26,6 @@
  */
 +(Turistiando *)darInstancia;
 
-/*!
- @method retorna todos los lugares de Turistiando
- */
--(NSMutableArray *)darLugares;
-
 
 
 @end

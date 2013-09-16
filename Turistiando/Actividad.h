@@ -38,7 +38,7 @@
 
 @property (strong,nonatomic) NSString *fecha;
 @property (strong,nonatomic) NSString *nombre;
-@property (nonatomic) BOOL *realizada;
+@property (nonatomic,nonatomic) BOOL *realizada;
 @property (nonatomic) long *latitud;
 @property (nonatomic) long *longitud;
 

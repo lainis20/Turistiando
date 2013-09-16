@@ -20,12 +20,17 @@
      Diccionario del lugar
      */
     Diccionario *diccionario;
+    
+    /*!
+     Nombre del lugar
+     */
+    NSString *nombreL;
 }
 
 
 @property(strong,nonatomic) NSMutableArray *actividades;
 @property(strong,nonatomic) Diccionario *diccionario;
-
+@property(strong,nonatomic) NSString *nombreL;
 /*!
  @method retorna la lista de las actividades que tiene el lugar
  */

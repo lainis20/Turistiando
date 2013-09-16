@@ -12,13 +12,14 @@
 
 @synthesize diccionario = _diccionario;
 @synthesize actividades = _actividades;
+@synthesize nombreL= _nombreL;
 
--(NSMutableArray *)darActividades;
+-(NSMutableArray *)darActividades
 {
     return [self.diccionario darActividades];
 }
 
--(void)agregarActividadAdiccionario:(Actividad *) actividad;
+-(void)agregarActividadAdiccionario:(Actividad *) actividad
 {
     [self.diccionario agregarActividad:actividad];
 }

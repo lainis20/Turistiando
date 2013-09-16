@@ -14,12 +14,12 @@
 @synthesize actividadesRealizadas = _actividadesRealizadas;
 @synthesize actividadesNORealizadas = _actividadesNORealizadas;
 
--(NSMutableArray *)darActividades:(NSString *) actividades;
+-(NSMutableArray *)darActividades
 {
     return self.actividades;
 }
 
--(void)agregarActividad:(Actividad *) actividad;
+-(void)agregarActividad:(Actividad *) actividad
 {
     [actividades addObject:actividad];
 }
@@ -36,7 +36,7 @@
     return actividadesRealizadas;
 }
 
--(NSMutableArray *)darActividadesNOrealizadas;
+-(NSMutableArray *)darActividadesNOrealizadas
 {
     for (Actividad * acti in actividades)
     {

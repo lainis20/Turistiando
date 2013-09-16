@@ -10,33 +10,33 @@
 
 @implementation Actividad
 
--(void)cambiarFecha:(NSString *) fecha;
+-(void)cambiarFecha:(NSString *) fecha
 {
     self.fecha = fecha;
 }
 
--(NSString *)darNombre;
+-(NSString *) darNombre
 {
     return self.nombre;
 }
 
--(NSString *)darFecha;
+-(NSString *)darFecha
 {
     return self.fecha;
 }
 
--(BOOL *)darRealizada;
+-(BOOL *)darRealizada
 {
-    return self
+    //return self.;
 }
 
--(long) darLatitud;
+-(long)darLatitud
 {
-    return self
+    //return self;
 }
 
--(long) darLongitud;
+-(long)darLongitud
 {
-    
+   // return self.;
 }
 @end

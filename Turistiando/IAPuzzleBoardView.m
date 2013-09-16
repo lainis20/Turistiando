@@ -47,13 +47,12 @@
 - (void)playWithImage:(UIImage *)image andSize:(NSInteger)size {
     IAPuzzleBoard *board = [[IAPuzzleBoard alloc] initWithSize:size];
     self.board = board;
-    [board release];
     
     UIImage *resizedImage = [image resizedImageWithSize:self.frame.size];
     _tileWidth = resizedImage.size.width/size;
     _tileHeight = resizedImage.size.height/size;
     
-    self.tiles = [[[NSMutableArray alloc] init] autorelease];
+    self.tiles = [[NSMutableArray alloc] init];
     for (int i = 0; i < _board.size; i++) {
         for (int j = 0; j < _board.size; j++) {
             if ((i == _board.size) && (j == _board.size)) {
@@ -71,7 +70,6 @@
             [tileImageView.layer setShadowPath:[[UIBezierPath bezierPathWithRect:tileImageView.layer.bounds] CGPath]];
             
             [self.tiles addObject:tileImageView];
-            [tileImageView release];
         }
     }
     
@@ -80,13 +78,11 @@
     [dragGesture setMaximumNumberOfTouches:1];
     [dragGesture setMinimumNumberOfTouches:1];
     [self addGestureRecognizer:dragGesture];
-    [dragGesture release];
     
     // add tapping recognizer
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapMove:)];
     [tapGesture setNumberOfTapsRequired:1];
     [self addGestureRecognizer:tapGesture];
-    [tapGesture release];
     
     [self play];
 }
@@ -293,8 +289,6 @@
     self.delegate = nil;
     self.tiles = nil;
     self.board = nil;
-    [_draggedTile release];
-    [super dealloc];
 }
 
 #pragma mark - Dragging gesture methods
@@ -315,8 +309,7 @@
             if (_direction != NONE) {
                 for (UIImageView *tile in self.tiles) {
                     if (CGRectContainsPoint(tile.frame, point)) {
-                        [_draggedTile release];
-                        _draggedTile = [tile retain];
+                        _draggedTile = tile;
                         break;
                     }
                 }

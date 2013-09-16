@@ -9,7 +9,7 @@
 #import "Diccionario.h"
 
 @implementation Diccionario
-    
+
 @synthesize actividades = _actividades;
 @synthesize actividadesRealizadas = _actividadesRealizadas;
 @synthesize actividadesNORealizadas = _actividadesNORealizadas;

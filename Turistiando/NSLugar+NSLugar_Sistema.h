@@ -1,5 +1,5 @@
 //
-//  NSLugar.m
+//  NSLugar+NSLugar_Sistema.h
 //  Turistiando
 //
 //  Created by Lina Maria Duarte Salinas on 16/09/13.
@@ -7,16 +7,7 @@
 //
 
 #import "NSLugar.h"
-#import "NSActividad.h"
-#import "NSDiccionario.h"
 
-
-@implementation NSLugar
-
-@dynamic imagen;
-@dynamic nombre;
-@dynamic actividades;
-@dynamic diccionario;
-
+@interface NSLugar (NSLugar_Sistema)
 
 @end

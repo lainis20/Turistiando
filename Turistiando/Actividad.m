@@ -10,20 +10,23 @@
 
 @implementation Actividad
 
--(void)cambiarFecha:(NSString *) fecha;
+@synthesize fecha = _fecha;
+@synthesize nombre = _nombre;
+@synthesize fecha = _fecha;
+
+-(BOOL *)darRealizada
 {
-    self.fecha = fecha;
+    //return self.;
 }
 
--(NSString *)darNombre;
+-(long)darLatitud
 {
-    return self.nombre;
+    //return self;
 }
 
--(NSString *)darFecha;
+-(long)darLongitud
 {
-    return self.fecha;
+   // return self.;
 }
-
 
 @end

@@ -190,6 +190,7 @@
 				FA98DC6C17E4E7EE007DB23A /* libreriasOpen */,
 				8FD7B24F17E4D0C200C42776 /* Turistiando-Info.plist */,
 				8FD7B25017E4D0C200C42776 /* InfoPlist.strings */,
+				8F58098017E60E0100A66D40 /* ModelTuristiando.xcdatamodeld */,
 				8FD7B25317E4D0C200C42776 /* main.m */,
 				8FD7B25517E4D0C200C42776 /* Turistiando-Prefix.pch */,
 				8FD7B25917E4D0C200C42776 /* Default.png */,
@@ -228,7 +229,6 @@
 				8FD7B28717E4D84900C42776 /* Lugar.m */,
 				8F6B8AB817E4EA6B003D40DB /* Actividad.h */,
 				8F6B8AB917E4EA6B003D40DB /* Actividad.m */,
-				8F58098017E60E0100A66D40 /* ModelTuristiando.xcdatamodeld */,
 				8F8BA10B17E65CD30087CA78 /* Diccionario.h */,
 				8F8BA10C17E65CD30087CA78 /* Diccionario.m */,
 			);
@@ -401,6 +401,7 @@
 				FA5D0A8A17E5A09100577E21 /* ComunidadViewController.m in Sources */,
 				FA5D0A8D17E5A6EC00577E21 /* NoticiasViewController.m in Sources */,
 				FAC7822417E633170006E578 /* IntroHijoViewController.m in Sources */,
+				8F8BA10D17E65CD30087CA78 /* Diccionario.m in Sources */,
 				FAC7822817E65A3C0006E578 /* IntroViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

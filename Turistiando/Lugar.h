@@ -38,5 +38,10 @@
  */
 -(void)agregarActividadAdiccionario:(NSString *) actividad;
 
+/*!
+ @method get de actividades, si es null la crea
+ */
+-(NSMutableArray *)actividades;
+
 
 @end

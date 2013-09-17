@@ -26,6 +26,11 @@
  */
 +(Turistiando *)darInstancia;
 
+/*!
+ @method retorna los lugares de Turistiando
+ En caso de no existir, se crea
+ */
+//-(NSMutableArray *)lugares;
 
 
 @end

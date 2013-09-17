@@ -20,4 +20,9 @@
     [self.diccionario agregarActividad:actividad];
 }
 
+-(NSMutableArray *)actividades;
+{
+    if(_actividades==nil) _actividades = [[NSMutableArray alloc]init];
+     return _actividades;
+}
 @end

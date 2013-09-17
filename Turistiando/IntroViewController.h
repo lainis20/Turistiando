@@ -12,6 +12,5 @@
 
 @property (strong, nonatomic) UIPageViewController * pageC;
 
-@property (strong, nonatomic) IBOutlet UIPageControl *pageCon;
 
 @end

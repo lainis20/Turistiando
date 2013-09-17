@@ -33,6 +33,8 @@
 		8FD7B27917E4D0C200C42776 /* TuristiandoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7B27817E4D0C200C42776 /* TuristiandoTests.m */; };
 		8FD7B28517E4D67000C42776 /* Turistiando.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7B28417E4D67000C42776 /* Turistiando.m */; };
 		8FD7B28817E4D84900C42776 /* Lugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7B28717E4D84900C42776 /* Lugar.m */; };
+		FA0B733417E8B5AE0004BF4B /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7822717E65A3C0006E578 /* IntroViewController.m */; };
+		FA0B733617E8B9FC0004BF4B /* icono57.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0B733517E8B9FC0004BF4B /* icono57.png */; };
 		FA197A9817E5856B0000813D /* CiudadOpcionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA197A9717E5856B0000813D /* CiudadOpcionViewController.m */; };
 		FA197A9B17E5913F0000813D /* DiccionarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA197A9A17E5913F0000813D /* DiccionarioViewController.m */; };
 		FA5D0A8717E59F4700577E21 /* VerElementoDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5D0A8617E59F4700577E21 /* VerElementoDViewController.m */; };
@@ -106,6 +108,7 @@
 		8FD7B28417E4D67000C42776 /* Turistiando.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Turistiando.m; sourceTree = "<group>"; };
 		8FD7B28617E4D84900C42776 /* Lugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lugar.h; sourceTree = "<group>"; };
 		8FD7B28717E4D84900C42776 /* Lugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lugar.m; sourceTree = "<group>"; };
+		FA0B733517E8B9FC0004BF4B /* icono57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono57.png; sourceTree = "<group>"; };
 		FA197A9617E5856B0000813D /* CiudadOpcionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CiudadOpcionViewController.h; sourceTree = "<group>"; };
 		FA197A9717E5856B0000813D /* CiudadOpcionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CiudadOpcionViewController.m; sourceTree = "<group>"; };
 		FA197A9917E5913F0000813D /* DiccionarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiccionarioViewController.h; sourceTree = "<group>"; };
@@ -181,7 +184,7 @@
 		8FD7B23B17E4D0C200C42776 = {
 			isa = PBXGroup;
 			children = (
-				8F4B551D17E760CF0014B891 /* CoreData.framework */,
+				FA0B733517E8B9FC0004BF4B /* icono57.png */,
 				8FD7B24D17E4D0C200C42776 /* Turistiando */,
 				8FD7B27117E4D0C200C42776 /* TuristiandoTests */,
 				8FD7B24617E4D0C200C42776 /* Frameworks */,
@@ -201,6 +204,7 @@
 		8FD7B24617E4D0C200C42776 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F4B551D17E760CF0014B891 /* CoreData.framework */,
 				8FD7B24717E4D0C200C42776 /* UIKit.framework */,
 				8FD7B24917E4D0C200C42776 /* Foundation.framework */,
 				8FD7B24B17E4D0C200C42776 /* CoreGraphics.framework */,
@@ -393,6 +397,7 @@
 				8FD7B26117E4D0C200C42776 /* MainStoryboard.storyboard in Resources */,
 				FAC7822517E633170006E578 /* IntroHijoViewController.xib in Resources */,
 				FAC7822A17E6BD910006E578 /* data_usuario.plist in Resources */,
+				FA0B733617E8B9FC0004BF4B /* icono57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0B733417E8B5AE0004BF4B /* IntroViewController.m in Sources */,
 				FAC7822E17E6D0220006E578 /* UIImage+Resize.m in Sources */,
 				FA5D0A8F17E5AA9E00577E21 /* IAPuzzleBoard.m in Sources */,
 				FA5D0A8E17E5AA9800577E21 /* SWRevealViewController.m in Sources */,

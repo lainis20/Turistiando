@@ -10,6 +10,6 @@
 
 @interface NSDiccionario (NSDiccionario_Sistema)
 
-+(NSActividad *)agregarLaActividad:(NSArray *) actividad ADiccionario:(NSString *) nameDicc conContexto:(NSManagedObjectContext *) contexto;
++(NSActividad *)agregarLaActividad:(NSArray *) actividad ADiccionarioDeLugar:(NSArray *) lugar conContexto:(NSManagedObjectContext *) contexto;
 
 @end

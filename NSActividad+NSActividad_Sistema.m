@@ -16,11 +16,11 @@
     
     nueva = [NSEntityDescription insertNewObjectForEntityForName:@"Actividad" inManagedObjectContext:contexto];
     
-    nueva.fecha = [actividades objectAtIndex:0];
-    nueva.foto = [actividades objectAtIndex:1];
-    nueva.latitud = [actividades objectAtIndex:2];
-    nueva.longitud = [actividades objectAtIndex:3];
-    nueva.nombre = [actividades objectAtIndex:4];
+    nueva.fecha = [actividad objectAtIndex:0];
+    nueva.foto = [actividad objectAtIndex:1];
+    nueva.latitud = [actividad objectAtIndex:2];
+    nueva.longitud = [actividad objectAtIndex:3];
+    nueva.nombre = [actividad objectAtIndex:4];
 
     return nueva;
 }

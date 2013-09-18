@@ -3,14 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>nombre</key>
-	<string></string>
+	<string>Juan</string>
 	<key>nacionalidad</key>
-	<string></string>
+	<string>Colombiano</string>
 	<key>ciudades</key>
 	<array>
-		<string>bogota</string>
+		<string>Bogota</string>
+		<string>Medellin</string>
+		<string>Cartagena</string>
 	</array>
 	<key>elementos</key>
-	<array/>
+	<array>
+		<array>
+			<string>Canelazo</string>
+			<string>Monzerate</string>
+			<string>Andres Carne de Res</string>
+		</array>
+		<array>
+			<string>Parque Explora</string>
+			<string>Metro</string>
+			<string>Plaza Botero</string>
+		</array>
+		<array>
+			<string>Castillo San Felipe</string>
+			<string>Ciudad Amurallada</string>
+			<string>Cholon</string>
+		</array>
+	</array>
 </dict>
 </plist>

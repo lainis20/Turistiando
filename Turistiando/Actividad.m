@@ -12,21 +12,33 @@
 
 @synthesize fecha = _fecha;
 @synthesize nombre = _nombre;
-@synthesize fecha = _fecha;
+@synthesize latitud = _latitud;
+@synthesize longitud = _longitud;
+@synthesize realizada = _realizada;
 
--(BOOL *)darRealizada
+-(id)initWithParam:(NSString*) nombreA
 {
-    //return self.;
+    self = [self init];
+    if (self) {
+        _nombre=nombreA;
+    }
+
+return self;
+}
+
+-(BOOL)darRealizada
+{
+    return NO;
 }
 
 -(long)darLatitud
 {
-    //return self;
+    return 0;
 }
 
 -(long)darLongitud
 {
-   // return self.;
+   return 0;
 }
 
 @end

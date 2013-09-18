@@ -17,14 +17,25 @@
   lista de lugares
   */
     NSMutableArray *lugares;
+    
+    NSString * nombre;
+    
+    NSString *nacio;
 }
 
 @property(strong,nonatomic) NSMutableArray *lugares;
+@property(strong,nonatomic) NSString * nombre;
+@property(strong,nonatomic) NSString *nacio;
 
 /*!
  @method retorna la instancia de la clase
  */
 +(Turistiando *)darInstancia;
+
+
+-(void) agregarLugar: (Lugar *) lugar;
+
+-(void) agregarActividadADiccionarioLugar: (Actividad*) actividadA aLugar: (NSString*) lugarA;
 
 /*!
  @method retorna los lugares de Turistiando

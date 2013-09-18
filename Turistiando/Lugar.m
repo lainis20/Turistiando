@@ -14,6 +14,20 @@
 @synthesize actividades = _actividades;
 @synthesize nombreL= _nombreL;
 
+-(id)initWithParam:(NSMutableArray*) actividadesA conNombre: (NSString*) nombreA
+{
+    self = [self init];
+    if(self)
+    {
+        _diccionario = [[Diccionario alloc] init];
+        _actividades = actividadesA;
+        _nombreL =nombreA;
+    }
+    
+return self;
+
+}
+
 
 -(void)agregarActividadAdiccionario:(Actividad *) actividad
 {
@@ -25,4 +39,5 @@
     if(_actividades==nil) _actividades = [[NSMutableArray alloc]init];
      return _actividades;
 }
+
 @end

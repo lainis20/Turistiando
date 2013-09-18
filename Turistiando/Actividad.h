@@ -58,4 +58,6 @@
  */
 -(long) darLongitud;
 
+-(id)initWithParam:(NSString*) nombreA;
+
 @end

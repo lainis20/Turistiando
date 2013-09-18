@@ -8,6 +8,7 @@
 
 #import "TablaIndiceViewController.h"
 #import "SWRevealViewController.h"
+#import "Turistiando.h"
 
 @interface TablaIndiceViewController ()
 
@@ -16,6 +17,7 @@
 @implementation TablaIndiceViewController
 
 @synthesize menu = _menu;
+@synthesize ciudadesU = _ciudadesU;
 
 - (void)viewDidLoad
 {
@@ -40,7 +42,10 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.menu count];
+    Turistiando * tour = [Turistiando darInstancia];
+    int intM =[self.menu count];
+    int intT = intM+[tour.lugares count];
+    return intT;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

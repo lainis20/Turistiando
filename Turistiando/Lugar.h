@@ -36,12 +36,13 @@
 /*!
  @method permite agregar una actividad del lugar al diccionario 
  */
--(void)agregarActividadAdiccionario:(NSString *) actividad;
+-(void)agregarActividadAdiccionario:(Actividad *) actividad;
 
 /*!
  @method get de actividades, si es null la crea
  */
 -(NSMutableArray *)actividades;
 
+-(id)initWithParam:(NSMutableArray*) actividadesA conNombre: (NSString*) nombreA;
 
 @end

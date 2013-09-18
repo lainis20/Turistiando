@@ -33,34 +33,41 @@
 -(IBAction)quitar:(id)sender
 {
     [self.txtNombre resignFirstResponder];
+}
+
+-(IBAction)quitarC:(id)sender
+{
     [self.txtNacio resignFirstResponder];
+
 }
 
 
 -(IBAction)iniciar:(id)sender
 {
-    NSString *nombre = self.txtNombre.text;
-    NSString *nac = self.txtNacio.text;
-    if (![nombre isEqualToString:@""]&&![nac isEqualToString:@""]) {
-        NSArray *paths = NSSearchPathForDirectoriesInDomains (NSDocumentDirectory, NSUserDomainMask, YES);
-        NSString *rutaPlist =  [[paths objectAtIndex:0] stringByAppendingPathComponent:@"data_usuario.plist"];
-        NSDictionary *dic = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects: nombre,nac,@"YES", nil] forKeys:[NSArray arrayWithObjects:@"nombre",@"nacionalidad",@"inicio",nil]];
-        NSString *error;
-        NSData *plistdata = [NSPropertyListSerialization dataFromPropertyList:dic format:NSPropertyListXMLFormat_v1_0 errorDescription:&error];
-        if(plistdata)
-        {
-            [plistdata writeToFile:rutaPlist atomically:YES];
-        }
-        else{
-            NSLog(@"ERROR CREANDO PLIST: %@",error);
-        }
-        [self.parentViewController.parentViewController performSegueWithIdentifier:@"prin" sender:self.parentViewController];
-    }
-    else
-    {
-        UIAlertView *alerta = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Ni nombre ni la nacionalidad pueden estar vacios. Porfavor Completarlos" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
-        [alerta show];
-    }
+//    NSString *nombre = self.txtNombre.text;
+//    NSString *nac = self.txtNacio.text;
+//    if (![nombre isEqualToString:@""]&&![nac isEqualToString:@""]) {
+//        NSArray *paths = NSSearchPathForDirectoriesInDomains (NSDocumentDirectory, NSUserDomainMask, YES);
+//        NSString *rutaPlist =  [[paths objectAtIndex:0] stringByAppendingPathComponent:@"data_usuario.plist"];
+//        NSDictionary *dic = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects: nombre,nac,@"YES", [NSArray arrayWithObjects:@"Bogota",@"Cartagena",@"Medelin", nil],[NSArray arrayWithObjects:`, nil],nil] forKeys:[NSArray arrayWithObjects:@"nombre",@"nacionalidad",@"inicio",nil]];
+//        NSString *error;
+//        NSData *plistdata = [NSPropertyListSerialization dataFromPropertyList:dic format:NSPropertyListXMLFormat_v1_0 errorDescription:&error];
+//        if(plistdata)
+//        {
+//            [plistdata writeToFile:rutaPlist atomically:YES];
+//        }
+//        else{
+//            NSLog(@"ERROR CREANDO PLIST: %@",error);
+//        }
+//        
+//    }
+//    else
+//    {
+//        UIAlertView *alerta = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Ni nombre ni la nacionalidad pueden estar vacios. Porfavor Completarlos" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+//        [alerta show];
+//    }
+
+[self.parentViewController.parentViewController performSegueWithIdentifier:@"prin" sender:self.parentViewController];
    
 }
 

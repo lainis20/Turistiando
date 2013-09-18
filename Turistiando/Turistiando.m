@@ -11,7 +11,9 @@
 
 @implementation Turistiando
 
-@synthesize lugares=_lugares;
+@synthesize lugares= _lugares;
+@synthesize nombre = _nombre;
+@synthesize nacio = _nacio;
 
 static Turistiando * instancia = nil;
 

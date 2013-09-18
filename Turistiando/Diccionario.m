@@ -20,6 +20,18 @@
     [actividades addObject:actividad];
 }
 
+
+-(id)init
+{
+    self = [self init];
+    if(self)
+    {
+        _actividades = [NSMutableArray arrayWithCapacity:15];
+        _actividadesRealizadas = [NSMutableArray arrayWithCapacity:15];
+    }
+return self;
+}
+
 /*!
 -(NSMutableArray *)darActividadesRealizadas;
 {

@@ -8,6 +8,7 @@
 
 #import "NoticiasViewController.h"
 #import "SWRevealViewController.h"
+#import "Turistiando.h"
 
 @interface NoticiasViewController ()
 
@@ -25,6 +26,10 @@
     self.buttonBarMenu.action = @selector(revealToggle:);
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    Turistiando *tour = [Turistiando darInstancia];    
+    self.nombre.text = tour.nombre;
+    self.nacio.text = tour.nacio;
+    
 	// Do any additional setup after loading the view.
 }
 

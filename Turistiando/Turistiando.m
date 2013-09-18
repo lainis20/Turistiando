@@ -7,6 +7,7 @@
 //
 
 #import "Turistiando.h"
+#import "Lugar.h"
 
 @implementation Turistiando
 
@@ -28,10 +29,27 @@ static Turistiando * instancia = nil;
     lugares = [[NSMutableArray alloc] init];
 }
 
-//-(NSMutableArray *)lugares
-//{
-  //  if(_lugares==nil) _lugares = [[NSMutableArray alloc]init];
-   // return _lugares;
-//}
+-(NSMutableArray *) darLugaresString
+{
+    NSMutableArray * resp = [[NSMutableArray alloc] init];
+    for( Lugar * lugar in _lugares)
+    {
+        NSString * txt = lugar.nombreL ;
+        [resp addObject:txt];
+    }
+    return resp;
+}
 
+-(NSMutableArray *) darActividadesDeLugarString:(NSString *) place;
+{
+    NSMutableArray *resp = [[NSMutableArray alloc] init];
+    for( Lugar * lugar in _lugares)
+    {
+        if([lugar.nombreL isEqualToString:place])
+        {
+            resp=lugar.actividades;
+        }
+    }
+    return resp;
+}
 @end

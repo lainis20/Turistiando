@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <EventKit/EKEventStore.h>
 #import "Lugar.h"
 #import "Diccionario.h"
 
@@ -26,6 +27,7 @@
 @property(strong,nonatomic) NSMutableArray *lugares;
 @property(strong,nonatomic) NSString * nombre;
 @property(strong,nonatomic) NSString *nacio;
+
 
 /*!
  @method retorna la instancia de la clase

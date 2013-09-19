@@ -45,6 +45,7 @@
 		FA0B734517E927270004BF4B /* Actividad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B8AB917E4EA6B003D40DB /* Actividad.m */; };
 		FA197A9817E5856B0000813D /* CiudadOpcionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA197A9717E5856B0000813D /* CiudadOpcionViewController.m */; };
 		FA197A9B17E5913F0000813D /* DiccionarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA197A9A17E5913F0000813D /* DiccionarioViewController.m */; };
+		FA1D96E017EB5E0E0050101D /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1D96DF17EB5E0E0050101D /* EventKit.framework */; };
 		FA59FE8B17EAB82400565251 /* CrearExperienciaActivCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59FE8A17EAB82400565251 /* CrearExperienciaActivCell.m */; };
 		FA59FE8E17EAB84600565251 /* ExperianciaActivCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59FE8D17EAB84600565251 /* ExperianciaActivCell.m */; };
 		FA59FE9117EABD0E00565251 /* CrearRecordatorioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59FE9017EABD0E00565251 /* CrearRecordatorioViewController.m */; };
@@ -133,6 +134,7 @@
 		FA197A9717E5856B0000813D /* CiudadOpcionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CiudadOpcionViewController.m; sourceTree = "<group>"; };
 		FA197A9917E5913F0000813D /* DiccionarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiccionarioViewController.h; sourceTree = "<group>"; };
 		FA197A9A17E5913F0000813D /* DiccionarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiccionarioViewController.m; sourceTree = "<group>"; };
+		FA1D96DF17EB5E0E0050101D /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		FA59FE8917EAB82400565251 /* CrearExperienciaActivCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrearExperienciaActivCell.h; sourceTree = "<group>"; };
 		FA59FE8A17EAB82400565251 /* CrearExperienciaActivCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrearExperienciaActivCell.m; sourceTree = "<group>"; };
 		FA59FE8C17EAB84500565251 /* ExperianciaActivCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExperianciaActivCell.h; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1D96E017EB5E0E0050101D /* EventKit.framework in Frameworks */,
 				8F4B551E17E760CF0014B891 /* CoreData.framework in Frameworks */,
 				8FD7B24817E4D0C200C42776 /* UIKit.framework in Frameworks */,
 				8FD7B24A17E4D0C200C42776 /* Foundation.framework in Frameworks */,
@@ -232,7 +235,7 @@
 		8FD7B24617E4D0C200C42776 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8FD7B27117E4D0C200C42776 /* TuristiandoTests */,
+				FA1D96DF17EB5E0E0050101D /* EventKit.framework */,
 				8F4B551D17E760CF0014B891 /* CoreData.framework */,
 				8FD7B24717E4D0C200C42776 /* UIKit.framework */,
 				8FD7B24917E4D0C200C42776 /* Foundation.framework */,
@@ -255,6 +258,7 @@
 				FAC7822917E6BD910006E578 /* datausuario.plist */,
 				FA0B734317E913A20004BF4B /* ciudades.plist */,
 				8FD7B26317E4D0C200C42776 /* ViewController.m */,
+				8FD7B27117E4D0C200C42776 /* TuristiandoTests */,
 				8FD7B24E17E4D0C200C42776 /* Supporting Files */,
 			);
 			path = Turistiando;

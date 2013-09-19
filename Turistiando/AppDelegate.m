@@ -17,6 +17,7 @@
     
     NSArray *rutaS = NSSearchPathForDirectoriesInDomains (NSDocumentationDirectory, NSUserDomainMask, YES);
     NSString *rutaPlist =  [[rutaS objectAtIndex:0] stringByAppendingPathComponent:@"datausuario.plist"];
+    Turistiando *tour = [Turistiando darInstancia];
     
     if (![[NSFileManager defaultManager] fileExistsAtPath:rutaPlist]) {
         NSString *rutaPlistN = [[NSBundle mainBundle] pathForResource:@"datausuario" ofType:@"plist"];
@@ -38,7 +39,6 @@
             else {
                 NSLog(@"error1 : %@",error1);
             }
-            Turistiando *tour = [Turistiando darInstancia];
             NSArray *ciudades = [temp objectForKey:@"ciudades"];
             NSArray *elementos = [temp objectForKey:@"elementos"];
             for (int i = 0; i<[ciudades count]; i++ ) {
@@ -81,6 +81,8 @@
         }
         
     }
+    
+
         return YES;
 }
 

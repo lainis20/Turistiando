@@ -10,4 +10,7 @@
 
 @interface DiccionarioViewController : UITableViewController
 
+@property (strong,nonatomic) NSString* ciudad;
+@property(strong,nonatomic) NSArray* elementos;
+
 @end

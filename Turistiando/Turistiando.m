@@ -84,4 +84,22 @@ static Turistiando * instancia = nil;
     }
 }
 
+-(NSArray*) actividadesEnLugar:(NSString*) nlugar
+{
+    BOOL ya =NO;
+    NSMutableArray* result;
+    for( int i=0; i<[self.lugares count]||ya==YES;i++)
+    {
+        Lugar*lug = [self.lugares objectAtIndex:i];
+        if ([lug.nombreL isEqualToString:nlugar]) {
+            NSArray *resultA =lug.actividades;
+            result = [NSMutableArray arrayWithCapacity:[resultA count]];
+            for (Actividad* act in resultA) {
+                [result addObject:act.nombre];
+            }
+        }
+    }
+    return result;
+}
+
 @end

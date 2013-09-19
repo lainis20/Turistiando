@@ -8,6 +8,7 @@
 
 #import "CiudadOpcionViewController.h"
 #import "SWRevealViewController.h"
+#import "DiccionarioViewController.h"
 
 @interface CiudadOpcionViewController ()
 
@@ -32,6 +33,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"diccionario"]) {
+        DiccionarioViewController *siguien = [segue destinationViewController];
+        siguien.ciudad = self.title;
+    }
 }
 
 @end

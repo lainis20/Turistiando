@@ -33,7 +33,7 @@
             NSString*error1;
             NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:temp format:NSPropertyListXMLFormat_v1_0 errorDescription:&error1];
             if(plistData) {
-                BOOL si = [plistData writeToFile:rutaPlist atomically:YES];
+            [plistData writeToFile:rutaPlist atomically:YES];
             }
             else {
                 NSLog(@"error1 : %@",error1);

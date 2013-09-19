@@ -7,6 +7,7 @@
 //
 
 #import "VerElementoDViewController.h"
+#import "Turistiando.h"
 
 @interface VerElementoDViewController ()
 
@@ -14,14 +15,6 @@
 
 @implementation VerElementoDViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -35,4 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)recordar:(UIButton *)sender {
+    
+}
 @end

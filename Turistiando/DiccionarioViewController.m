@@ -7,6 +7,8 @@
 //
 
 #import "DiccionarioViewController.h"
+#import "VerElementoDViewController.h"
+#import "Turistiando.h"
 
 @interface DiccionarioViewController ()
 
@@ -14,47 +16,68 @@
 
 @implementation DiccionarioViewController
 
+@synthesize ciudad=_ciudad;
+@synthesize elementos = _elementos;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    Turistiando * tour = [Turistiando darInstancia];
+    NSArray* holii = [tour actividadesEnLugar:_ciudad];
+    [self setElementos:holii];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
+    
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning
+-(NSString*)ciudad
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return _ciudad;
+}
+
+-(void) setCiudad:(NSString *)ciudad
+{
+    _ciudad = ciudad;
+}
+
+-(NSArray*)elementos
+{
+    return _elementos;
+}
+
+-(void)setElementos:(NSArray *)elementos
+{
+    _elementos=elementos;
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    
+    return ([_elementos count]+1);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    UITableViewCell *cell;
+    if (indexPath.row==0) {
+         cell = [tableView dequeueReusableCellWithIdentifier:@"info" forIndexPath:indexPath];
+    }
+    else
+    {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"elementoD" forIndexPath:indexPath];
+        cell.textLabel.text = [_elementos objectAtIndex:(indexPath.row-1)];
+    }
+        
     return cell;
 }
 
@@ -110,4 +133,12 @@
      */
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:[self.tableView indexPathForSelectedRow]];
+    if ([[segue identifier] isEqualToString:@"verElemento"]) {
+        VerElementoDViewController * verEl=[segue destinationViewController];
+        verEl.title = cell.textLabel.text;
+    }
+}
 @end

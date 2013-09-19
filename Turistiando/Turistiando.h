@@ -37,6 +37,8 @@
 
 -(void) agregarActividadADiccionarioLugar: (Actividad*) actividadA aLugar: (NSString*) lugarA;
 
+-(NSArray*) actividadesEnLugar:(NSString*) nlugar;
+
 /*!
  @method retorna los lugares de Turistiando
  En caso de no existir, se crea

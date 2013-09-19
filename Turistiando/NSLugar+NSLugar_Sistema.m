@@ -45,6 +45,7 @@
         
         [place addActividadesObject:nueva];
     }
-
+#warning Potentially incomplete method implementation.
+    return nil;
 }
 @end

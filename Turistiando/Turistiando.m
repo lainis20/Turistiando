@@ -31,27 +31,57 @@ static Turistiando * instancia = nil;
     lugares = [[NSMutableArray alloc] init];
 }
 
--(NSMutableArray *) darLugaresString
+-(NSMutableArray *)lugares
 {
-    NSMutableArray * resp = [[NSMutableArray alloc] init];
-    for( Lugar * lugar in _lugares)
-    {
-        NSString * txt = lugar.nombreL ;
-        [resp addObject:txt];
-    }
-    return resp;
+    if(_lugares==nil) _lugares = [[NSMutableArray alloc]init];
+    return _lugares;
 }
 
--(NSMutableArray *) darActividadesDeLugarString:(NSString *) place;
+-(void) setLugares:(NSMutableArray *)lugaresP
 {
-    NSMutableArray *resp = [[NSMutableArray alloc] init];
-    for( Lugar * lugar in _lugares)
+    self.lugares =lugaresP;
+}
+
+-(NSString*) nombre
+{
+    if (_nombre==nil||[_nombre isEqualToString:@""]) {
+        _nombre = @"Turista";
+    }
+    return _nombre;
+}
+
+
+-(void) setNombre:(NSString *)nombreP
+{
+    self.nombre = nombreP;
+}
+
+-(NSString*) nacio
+{
+    if (_nacio==nil||[_nacio isEqualToString:@""]) {
+        _nacio = @"Mundial";
+    }
+    return _nacio;
+}
+
+-(void) setNacio:(NSString *)nacioP
+{
+    self.nacio = nacioP;
+}
+
+-(void) agregarLugar: (Lugar *) lugar
+{
+    [self.lugares addObject:lugar];
+}
+
+-(void) agregarActividadADiccionarioLugar: (Actividad*) actividadA aLugar: (NSString*) lugarA
+{
+    for(Lugar* lug in self.lugares)
     {
-        if([lugar.nombreL isEqualToString:place])
-        {
-            resp=lugar.actividades;
+        if ([lug.nombreL isEqualToString:lugarA] ) {
+            [lug agregarActividadAdiccionario:actividadA];
         }
     }
-    return resp;
 }
+
 @end

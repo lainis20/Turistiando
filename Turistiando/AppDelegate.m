@@ -14,9 +14,6 @@
 
 @implementation AppDelegate
 
-@synthesize contexto = _contexto;
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NSArray *rutaS = NSSearchPathForDirectoriesInDomains (NSDocumentationDirectory, NSUserDomainMask, YES);
@@ -80,47 +77,5 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
--(void) usarDocumeto
-{
-    NSURL *ruta = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
-    ruta = [ruta URLByAppendingPathComponent:@"Cache-Lugares"];
-    UIManagedDocument *doc = [[UIManagedDocument alloc] initWithFileURL:ruta];
-    
-    
-    if (![[NSFileManager defaultManager] fileExistsAtPath:[ruta path]]) {
-        
-        [doc saveToURL:ruta forSaveOperation:UIDocumentSaveForCreating completionHandler:^(BOOL success){
-            if (!success) {
-                NSLog(@"error en doc en crear-camara");
-                _contexto = nil;
-            }
-            else
-            {
-                _contexto= doc.managedObjectContext;
-            }
-        }];
-        
-    }
-    else if(doc.documentState == UIDocumentStateClosed){
-        [doc openWithCompletionHandler:^(BOOL success){
-            if (!success) {
-                NSLog(@"error en doc closed-camara");
-                _contexto = nil;}
-            else
-            {
-                self.contexto = doc.managedObjectContext;
-            }
-        }];
-    }
-    else
-    {
-        _contexto = doc.managedObjectContext;
-    }
-    
-}
-
-//- (IBAction)guardarDatosLugares:(UIButton *)sender
-
 
 @end

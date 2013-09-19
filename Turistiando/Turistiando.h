@@ -38,13 +38,10 @@
 -(void) agregarActividadADiccionarioLugar: (Actividad*) actividadA aLugar: (NSString*) lugarA;
 
 /*!
- @method retorna un arreglo con los nombres de los lugares de Turistiando
+ @method retorna los lugares de Turistiando
  En caso de no existir, se crea
  */
--(NSMutableArray *)darLugaresString;
+//-(NSMutableArray *)lugares;
 
-/*!
- @method retorna un arreglo con todos loss nombres de las actividades de un lugar que entra por parámetro
- */
--(NSMutableArray *) darActividadesDeLugarString:(NSString *) place;
+
 @end

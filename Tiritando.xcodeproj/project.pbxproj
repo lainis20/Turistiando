@@ -14,7 +14,6 @@
 		8F4B552417E796DC0014B891 /* NSActividad+NSActividad_Sistema.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B552317E796DC0014B891 /* NSActividad+NSActividad_Sistema.m */; };
 		8F4B552717E79C880014B891 /* NSDiccionario+NSDiccionario_Sistema.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B552617E79C880014B891 /* NSDiccionario+NSDiccionario_Sistema.m */; };
 		8F4B552A17E79CD90014B891 /* NSLugar+NSLugar_Sistema.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B552917E79CD80014B891 /* NSLugar+NSLugar_Sistema.m */; };
-		8F5C6CAB17E8BED200B3FB65 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7822717E65A3C0006E578 /* IntroViewController.m */; };
 		8F8BA10D17E65CD30087CA78 /* Diccionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8BA10C17E65CD30087CA78 /* Diccionario.m */; };
 		8FD7B24817E4D0C200C42776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24717E4D0C200C42776 /* UIKit.framework */; };
 		8FD7B24A17E4D0C200C42776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24917E4D0C200C42776 /* Foundation.framework */; };
@@ -390,7 +389,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Turistiando Colombia";
 			};
-			buildConfigurationList = 8FD7B23F17E4D0C200C42776 /* Build configuration list for PBXProject "Turistiando" */;
+			buildConfigurationList = 8FD7B23F17E4D0C200C42776 /* Build configuration list for PBXProject "Tiritando" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -462,7 +461,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F5C6CAB17E8BED200B3FB65 /* IntroViewController.m in Sources */,
+				FA0B734517E927270004BF4B /* Actividad.m in Sources */,
+				FA0B733417E8B5AE0004BF4B /* IntroViewController.m in Sources */,
 				FAC7822E17E6D0220006E578 /* UIImage+Resize.m in Sources */,
 				FA5D0A8F17E5AA9E00577E21 /* IAPuzzleBoard.m in Sources */,
 				FA5D0A8E17E5AA9800577E21 /* SWRevealViewController.m in Sources */,
@@ -653,7 +653,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8FD7B23F17E4D0C200C42776 /* Build configuration list for PBXProject "Turistiando" */ = {
+		8FD7B23F17E4D0C200C42776 /* Build configuration list for PBXProject "Tiritando" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FD7B27A17E4D0C200C42776 /* Debug */,

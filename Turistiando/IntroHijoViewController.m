@@ -7,6 +7,8 @@
 //
 
 #import "IntroHijoViewController.h"
+#import "Turistiando.h"
+
 
 
 @interface IntroHijoViewController ()
@@ -66,6 +68,13 @@
 //        UIAlertView *alerta = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Ni nombre ni la nacionalidad pueden estar vacios. Porfavor Completarlos" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
 //        [alerta show];
 //    }
+    
+    NSString *nombre = self.txtNombre.text;
+    NSString *nac = self.txtNacio.text;
+    
+    Turistiando *tour = [Turistiando darInstancia];
+    [tour setNombre:nombre];
+    [tour setNacio:nac];
 
 [self.parentViewController.parentViewController performSegueWithIdentifier:@"prin" sender:self.parentViewController];
    

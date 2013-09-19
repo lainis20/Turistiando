@@ -8,49 +8,82 @@
 
 #import "AppDelegate.h"
 #import "Turistiando.h"
-#import "Lugar.h"
-#import "Actividad.h"
-#import "Diccionario.h"
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     NSArray *rutaS = NSSearchPathForDirectoriesInDomains (NSDocumentationDirectory, NSUserDomainMask, YES);
-    NSString *rutaPlist =  [[rutaS objectAtIndex:0] stringByAppendingPathComponent:@"data_usuario.plist"];
+    NSString *rutaPlist =  [[rutaS objectAtIndex:0] stringByAppendingPathComponent:@"datausuario.plist"];
     
     if (![[NSFileManager defaultManager] fileExistsAtPath:rutaPlist]) {
-        rutaPlist = [[NSBundle mainBundle] pathForResource:@"data_usuario" ofType:@"plist"];
-    }
-    
-    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:rutaPlist];
-    
-    NSError *error =nil;
-    NSPropertyListFormat format;
-    NSDictionary *temp = (NSDictionary *)[NSPropertyListSerialization propertyListWithData:plistXML options:NSPropertyListMutableContainersAndLeaves format:&format error:&error];
-    if (!temp)
-    {
-        NSLog(@"Error reading plist: %@, format: %d", error, format);
+        NSString *rutaPlistN = [[NSBundle mainBundle] pathForResource:@"datausuario" ofType:@"plist"];
+        NSError *error;
+        NSData *dataplist=[[NSFileManager defaultManager] contentsAtPath:rutaPlistN];
+        NSPropertyListFormat format;
+        NSDictionary *temp = (NSDictionary *)[NSPropertyListSerialization propertyListWithData:dataplist options:NSPropertyListMutableContainersAndLeaves format:&format error:&error];
+        if (!temp)
+        {
+            NSLog(@"Error reading plist: %@, format: %d", error, format);
+        }
+        else
+        {
+            NSString*error1;
+            NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:temp format:NSPropertyListXMLFormat_v1_0 errorDescription:&error1];
+            if(plistData) {
+                BOOL si = [plistData writeToFile:rutaPlist atomically:YES];
+            }
+            else {
+                NSLog(@"error1 : %@",error1);
+            }
+            Turistiando *tour = [Turistiando darInstancia];
+            NSArray *ciudades = [temp objectForKey:@"ciudades"];
+            NSArray *elementos = [temp objectForKey:@"elementos"];
+            for (int i = 0; i<[ciudades count]; i++ ) {
+                NSString * ciudS = [ciudades objectAtIndex:i];
+                NSMutableArray * activ = [NSMutableArray arrayWithCapacity:[[elementos objectAtIndex:i] count]];
+                for (NSString* ele in [elementos objectAtIndex:i]) {
+                    [activ addObject:[[Actividad alloc] initWithParam:ele]];
+                }
+                [tour agregarLugar:[[Lugar alloc] initWithParam:activ conNombre:ciudS]];
+            }
+        }
+        
     }
     else
     {
-        Turistiando *tour = [Turistiando darInstancia];
-        [tour setNombre:[temp objectForKey:@"nombre"]];
-        [tour setNacio:[temp objectForKey:@"nacionalidad"]];
-        NSArray *ciudades = [temp objectForKey:@"ciudades"];
-        NSArray *elementos = [temp objectForKey:@"elementos"];
-        for (int i = 0; i<[ciudades count]; i++ ) {
-            NSString * ciudS = [ciudades objectAtIndex:i];
-            NSMutableArray * activ = [NSMutableArray arrayWithCapacity:[[elementos objectAtIndex:i] count]];
-            for (NSString* ele in [elementos objectAtIndex:i]) {
-                [activ addObject:[[Actividad alloc] initWithParam:ele]];
-            }
-            [tour agregarLugar:[[Lugar alloc] initWithParam:activ conNombre:ciudS]];
+        NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:rutaPlist];
+        
+        NSError *error =nil;
+        NSPropertyListFormat format;
+        NSDictionary *temp = (NSDictionary *)[NSPropertyListSerialization propertyListWithData:plistXML options:NSPropertyListMutableContainersAndLeaves format:&format error:&error];
+        if (!temp)
+        {
+            NSLog(@"Error reading plist: %@, format: %d", error, format);
         }
+        else
+        {
+            Turistiando *tour = [Turistiando darInstancia];
+            [tour setNombre:[temp objectForKey:@"nombre"]];
+            [tour setNacio:[temp objectForKey:@"nacionalidad"]];
+            NSArray *ciudades = [temp objectForKey:@"ciudades"];
+            NSArray *elementos = [temp objectForKey:@"elementos"];
+            for (int i = 0; i<[ciudades count]; i++ ) {
+                NSString * ciudS = [ciudades objectAtIndex:i];
+                NSMutableArray * activ = [NSMutableArray arrayWithCapacity:[[elementos objectAtIndex:i] count]];
+                for (NSString* ele in [elementos objectAtIndex:i]) {
+                    [activ addObject:[[Actividad alloc] initWithParam:ele]];
+                }
+                [tour agregarLugar:[[Lugar alloc] initWithParam:activ conNombre:ciudS]];
+            }
+        }
+        
     }
-    return YES;
+        return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

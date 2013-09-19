@@ -15,7 +15,7 @@
 +(NSActividad *)agregarLaActividad:(NSArray *) actividad ADiccionarioDeLugar:(NSArray *) lugar conContexto:(NSManagedObjectContext *) contexto;
 {
     
-    NSDiccionario *diccio = nil;
+//    NSDiccionario *diccio = nil;
     NSFetchRequest *fecher = [NSFetchRequest fetchRequestWithEntityName:@"Lugar"];
         fecher.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"nombre" ascending:TRUE]];
 
@@ -47,7 +47,6 @@
         
         [place.diccionario addActividadesObject:nueva];
     }
-    
 }
 
 @end

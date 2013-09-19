@@ -14,6 +14,10 @@
 		8F4B552417E796DC0014B891 /* NSActividad+NSActividad_Sistema.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B552317E796DC0014B891 /* NSActividad+NSActividad_Sistema.m */; };
 		8F4B552717E79C880014B891 /* NSDiccionario+NSDiccionario_Sistema.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B552617E79C880014B891 /* NSDiccionario+NSDiccionario_Sistema.m */; };
 		8F4B552A17E79CD90014B891 /* NSLugar+NSLugar_Sistema.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B552917E79CD80014B891 /* NSLugar+NSLugar_Sistema.m */; };
+		8F6073A417EABAE700F8555C /* ciudadAvatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F6073A317EABAE700F8555C /* ciudadAvatar.jpg */; };
+		8F6073A617EABAF700F8555C /* Monserrate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F6073A517EABAF700F8555C /* Monserrate.jpg */; };
+		8F6073A817EABB0700F8555C /* RompeMotolaDeslizable.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6073A717EABB0700F8555C /* RompeMotolaDeslizable.png */; };
+		8F6073AA17EABB4A00F8555C /* url.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F6073A917EABB4A00F8555C /* url.jpg */; };
 		8F8BA10D17E65CD30087CA78 /* Diccionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8BA10C17E65CD30087CA78 /* Diccionario.m */; };
 		8FD7B24817E4D0C200C42776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24717E4D0C200C42776 /* UIKit.framework */; };
 		8FD7B24A17E4D0C200C42776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24917E4D0C200C42776 /* Foundation.framework */; };
@@ -35,10 +39,6 @@
 		8FD7B28817E4D84900C42776 /* Lugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7B28717E4D84900C42776 /* Lugar.m */; };
 		FA0B733417E8B5AE0004BF4B /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7822717E65A3C0006E578 /* IntroViewController.m */; };
 		FA0B733617E8B9FC0004BF4B /* icono57.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0B733517E8B9FC0004BF4B /* icono57.png */; };
-		FA0B733817E90FA00004BF4B /* url.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA0B733717E90FA00004BF4B /* url.jpg */; };
-		FA0B733C17E90FA70004BF4B /* ciudadAvatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA0B733917E90FA70004BF4B /* ciudadAvatar.jpg */; };
-		FA0B733D17E90FA70004BF4B /* Monserrate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA0B733A17E90FA70004BF4B /* Monserrate.jpg */; };
-		FA0B733E17E90FA70004BF4B /* RompeMotolaDeslizable.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0B733B17E90FA70004BF4B /* RompeMotolaDeslizable.png */; };
 		FA0B734017E912640004BF4B /* ComunidadAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0B733F17E912640004BF4B /* ComunidadAvatar.png */; };
 		FA0B734217E912AD0004BF4B /* donut.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FA0B734117E912AD0004BF4B /* donut.JPG */; };
 		FA0B734417E913A20004BF4B /* ciudades.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA0B734317E913A20004BF4B /* ciudades.plist */; };
@@ -91,6 +91,10 @@
 		8F4B552817E79CD80014B891 /* NSLugar+NSLugar_Sistema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLugar+NSLugar_Sistema.h"; sourceTree = "<group>"; };
 		8F4B552917E79CD80014B891 /* NSLugar+NSLugar_Sistema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLugar+NSLugar_Sistema.m"; sourceTree = "<group>"; };
 		8F58098117E60E0100A66D40 /* ModelTuristiando.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelTuristiando.xcdatamodel; sourceTree = "<group>"; };
+		8F6073A317EABAE700F8555C /* ciudadAvatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ciudadAvatar.jpg; sourceTree = "<group>"; };
+		8F6073A517EABAF700F8555C /* Monserrate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Monserrate.jpg; sourceTree = "<group>"; };
+		8F6073A717EABB0700F8555C /* RompeMotolaDeslizable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RompeMotolaDeslizable.png; sourceTree = "<group>"; };
+		8F6073A917EABB4A00F8555C /* url.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = url.jpg; sourceTree = "<group>"; };
 		8F6B8AB817E4EA6B003D40DB /* Actividad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actividad.h; sourceTree = "<group>"; };
 		8F6B8AB917E4EA6B003D40DB /* Actividad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Actividad.m; sourceTree = "<group>"; };
 		8F8BA10B17E65CD30087CA78 /* Diccionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diccionario.h; sourceTree = "<group>"; };
@@ -122,10 +126,6 @@
 		8FD7B28617E4D84900C42776 /* Lugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lugar.h; sourceTree = "<group>"; };
 		8FD7B28717E4D84900C42776 /* Lugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lugar.m; sourceTree = "<group>"; };
 		FA0B733517E8B9FC0004BF4B /* icono57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icono57.png; path = ../icono57.png; sourceTree = "<group>"; };
-		FA0B733717E90FA00004BF4B /* url.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = url.jpg; path = "../../../Desktop/foto trurustindo/url.jpg"; sourceTree = "<group>"; };
-		FA0B733917E90FA70004BF4B /* ciudadAvatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ciudadAvatar.jpg; path = "../../../Desktop/foto trurustindo/ciudadAvatar.jpg"; sourceTree = "<group>"; };
-		FA0B733A17E90FA70004BF4B /* Monserrate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Monserrate.jpg; path = "../../../Desktop/foto trurustindo/Monserrate.jpg"; sourceTree = "<group>"; };
-		FA0B733B17E90FA70004BF4B /* RompeMotolaDeslizable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RompeMotolaDeslizable.png; path = "../../../Desktop/foto trurustindo/RompeMotolaDeslizable.png"; sourceTree = "<group>"; };
 		FA0B733F17E912640004BF4B /* ComunidadAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ComunidadAvatar.png; sourceTree = "<group>"; };
 		FA0B734117E912AD0004BF4B /* donut.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = donut.JPG; sourceTree = "<group>"; };
 		FA0B734317E913A20004BF4B /* ciudades.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ciudades.plist; sourceTree = "<group>"; };
@@ -215,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				8FD7B24D17E4D0C200C42776 /* Turistiando */,
-				8FD7B27117E4D0C200C42776 /* TuristiandoTests */,
 				8FD7B24617E4D0C200C42776 /* Frameworks */,
 				8FD7B24517E4D0C200C42776 /* Products */,
 			);
@@ -233,6 +232,7 @@
 		8FD7B24617E4D0C200C42776 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8FD7B27117E4D0C200C42776 /* TuristiandoTests */,
 				8F4B551D17E760CF0014B891 /* CoreData.framework */,
 				8FD7B24717E4D0C200C42776 /* UIKit.framework */,
 				8FD7B24917E4D0C200C42776 /* Foundation.framework */,
@@ -253,6 +253,7 @@
 				8FD7B25F17E4D0C200C42776 /* MainStoryboard.storyboard */,
 				8FD7B26217E4D0C200C42776 /* ViewController.h */,
 				FAC7822917E6BD910006E578 /* datausuario.plist */,
+				FA0B734317E913A20004BF4B /* ciudades.plist */,
 				8FD7B26317E4D0C200C42776 /* ViewController.m */,
 				8FD7B24E17E4D0C200C42776 /* Supporting Files */,
 			);
@@ -265,17 +266,17 @@
 				FA98DC6C17E4E7EE007DB23A /* libreriasOpen */,
 				8FD7B24F17E4D0C200C42776 /* Turistiando-Info.plist */,
 				8FD7B25017E4D0C200C42776 /* InfoPlist.strings */,
-				FA0B733717E90FA00004BF4B /* url.jpg */,
 				8F58098017E60E0100A66D40 /* ModelTuristiando.xcdatamodeld */,
 				FA0B734317E913A20004BF4B /* ciudades.plist */,
 				8FD7B25317E4D0C200C42776 /* main.m */,
 				8FD7B25517E4D0C200C42776 /* Turistiando-Prefix.pch */,
 				FA0B733517E8B9FC0004BF4B /* icono57.png */,
 				FA0B734117E912AD0004BF4B /* donut.JPG */,
+				8F6073A717EABB0700F8555C /* RompeMotolaDeslizable.png */,
+				8F6073A917EABB4A00F8555C /* url.jpg */,
+				8F6073A317EABAE700F8555C /* ciudadAvatar.jpg */,
+				8F6073A517EABAF700F8555C /* Monserrate.jpg */,
 				FA0B733F17E912640004BF4B /* ComunidadAvatar.png */,
-				FA0B733917E90FA70004BF4B /* ciudadAvatar.jpg */,
-				FA0B733A17E90FA70004BF4B /* Monserrate.jpg */,
-				FA0B733B17E90FA70004BF4B /* RompeMotolaDeslizable.png */,
 				8FD7B25917E4D0C200C42776 /* Default.png */,
 				8FD7B25B17E4D0C200C42776 /* Default@2x.png */,
 				8FD7B25D17E4D0C200C42776 /* Default-568h@2x.png */,
@@ -291,7 +292,7 @@
 				8FD7B27217E4D0C200C42776 /* Supporting Files */,
 			);
 			path = TuristiandoTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		8FD7B27217E4D0C200C42776 /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -445,13 +446,13 @@
 				FAC7822517E633170006E578 /* IntroHijoViewController.xib in Resources */,
 				FAC7822A17E6BD910006E578 /* datausuario.plist in Resources */,
 				FA0B733617E8B9FC0004BF4B /* icono57.png in Resources */,
-				FA0B733817E90FA00004BF4B /* url.jpg in Resources */,
-				FA0B733C17E90FA70004BF4B /* ciudadAvatar.jpg in Resources */,
-				FA0B733D17E90FA70004BF4B /* Monserrate.jpg in Resources */,
-				FA0B733E17E90FA70004BF4B /* RompeMotolaDeslizable.png in Resources */,
 				FA0B734017E912640004BF4B /* ComunidadAvatar.png in Resources */,
 				FA0B734217E912AD0004BF4B /* donut.JPG in Resources */,
 				FA0B734417E913A20004BF4B /* ciudades.plist in Resources */,
+				8F6073A417EABAE700F8555C /* ciudadAvatar.jpg in Resources */,
+				8F6073A617EABAF700F8555C /* Monserrate.jpg in Resources */,
+				8F6073A817EABB0700F8555C /* RompeMotolaDeslizable.png in Resources */,
+				8F6073AA17EABB4A00F8555C /* url.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

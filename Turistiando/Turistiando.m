@@ -7,6 +7,7 @@
 //
 
 #import "Turistiando.h"
+#import "Lugar.h"
 
 @implementation Turistiando
 

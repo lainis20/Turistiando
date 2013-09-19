@@ -8,14 +8,14 @@
 
 #import "AgregarCiudadViewController.h"
 #import "SWRevealViewController.h"
-
+#import "Turistiando.h"
 
 @interface AgregarCiudadViewController ()
 
 @end
 
 @implementation AgregarCiudadViewController
-
+@synthesize places=_places;
 
 - (void)viewDidLoad
 {
@@ -31,6 +31,46 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    NSArray *rutaS = NSSearchPathForDirectoriesInDomains (NSDocumentationDirectory, NSUserDomainMask, YES);
+    NSString *rutaPlist =  [[rutaS objectAtIndex:0] stringByAppendingPathComponent:@"ciudades.plist"];
+    
+    if (![[NSFileManager defaultManager] fileExistsAtPath:rutaPlist])
+    {
+        //si no existe paila
+        NSString *rutaPlistN = [[NSBundle mainBundle] pathForResource:@"ciudades" ofType:@"plist"];
+        NSError *error;
+        NSData *dataplist=[[NSFileManager defaultManager] contentsAtPath:rutaPlistN];
+        NSPropertyListFormat format;
+        NSArray *temp = (NSArray *)[NSPropertyListSerialization propertyListWithData:dataplist options:NSPropertyListMutableContainersAndLeaves format:&format error:&error];
+        if (!temp)
+        {
+            NSLog(@"Error reading plist: %@, format: %d", error, format);
+        }
+        else
+        {
+            _places=temp;
+
+        }
+        
+    }
+    else
+    {
+        NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:rutaPlist];
+        
+        NSError *error =nil;
+        NSPropertyListFormat format;
+        NSArray *temp = (NSArray *)[NSPropertyListSerialization propertyListWithData:plistXML options:NSPropertyListMutableContainersAndLeaves format:&format error:&error];
+        if (!temp)
+        {
+            NSLog(@"Error reading plist: %@, format: %d", error, format);
+        }
+        else
+        {        
+            //plistXML.accessibilityElementCoun
+        }
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,25 +83,25 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+    //???
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+    int intT = [_places count];
+    return intT;
     // Return the number of rows in the section.
-    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"nuevaCiudad";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
-    
+    cell.textLabel.text= [_places objectAtIndex:indexPath.row];
     return cell;
 }
 

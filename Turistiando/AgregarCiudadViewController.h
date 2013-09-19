@@ -11,4 +11,6 @@
 @interface AgregarCiudadViewController : UITableViewController
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *menuButton;
 
+@property (strong,nonatomic) NSArray * places;
+
 @end

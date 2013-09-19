@@ -9,6 +9,7 @@
 #import "TablaIndiceViewController.h"
 #import "SWRevealViewController.h"
 #import "Turistiando.h"
+#import "CiudadCell.h"
 
 @interface TablaIndiceViewController ()
 
@@ -22,7 +23,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.menu = @[@"titulo",@"perfil", @"ciudades",@"ciudad", @"comunidad"];
+    self.menu = [NSMutableArray arrayWithArray:@[@"titulo",@"perfil", @"ciudades",@"ciudad",@"agregarCiudad", @"comunidad"]];
 	// Do any additional setup after loading the view.
 }
 
@@ -30,6 +31,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    self.menu = [NSMutableArray arrayWithArray:@[@"titulo",@"perfil", @"ciudades",@"ciudad",@"agregarCiudad", @"comunidad"]];
 }
 
 
@@ -43,15 +49,49 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     Turistiando * tour = [Turistiando darInstancia];
-    int intM =[self.menu count];
+    int intM =[self.menu count]-1;
     int intT = intM+[tour.lugares count];
     return intT;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *cellI = [self.menu objectAtIndex:indexPath.row];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellI forIndexPath:indexPath];
+    UITableViewCell *cell;
+    NSString *cellI = [self.menu objectAtIndex:0];
+    if ([cellI isEqualToString:@"ciudad"]) {
+        CiudadCell *cell1;
+        Turistiando * tour = [Turistiando darInstancia];
+        NSUInteger da = [[tour lugares] count];
+        NSUInteger da1 = da-indexPath.row;
+        if (da==0) {
+            return nil;
+        }
+        else
+        {
+            if (da1==-2) {
+                 cell1=(CiudadCell*)[tableView dequeueReusableCellWithIdentifier:cellI forIndexPath:indexPath];
+                int rowM = indexPath.row -3;
+                cell.textLabel.text = [[[tour lugares] objectAtIndex:rowM] nombreL];
+                [self.menu removeObject:cellI];
+
+            }
+            else
+            {
+                cell1 =(CiudadCell*)[tableView dequeueReusableCellWithIdentifier:cellI forIndexPath:indexPath];
+                int rowM = indexPath.row -3;
+                cell.textLabel.text = [[[tour lugares] objectAtIndex:rowM] nombreL];
+            }
+            
+
+        }
+    }
+    else
+    {
+        cell = [tableView dequeueReusableCellWithIdentifier:cellI forIndexPath:indexPath];
+        [self.menu removeObject:cellI];
+
+    }
+
     
     return cell;
 }

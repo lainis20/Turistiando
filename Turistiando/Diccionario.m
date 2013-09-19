@@ -21,13 +21,13 @@
 }
 
 
--(id)init
+-(id)initWithProperties
 {
     self = [self init];
     if(self)
     {
-        _actividades = [NSMutableArray arrayWithCapacity:15];
-        _actividadesRealizadas = [NSMutableArray arrayWithCapacity:15];
+        actividades = [NSMutableArray arrayWithCapacity:15];
+        actividadesRealizadas = [NSMutableArray arrayWithCapacity:15];
     }
 return self;
 }

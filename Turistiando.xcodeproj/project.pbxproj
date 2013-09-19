@@ -50,13 +50,14 @@
 		FA5D0A8D17E5A6EC00577E21 /* NoticiasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5D0A8C17E5A6EC00577E21 /* NoticiasViewController.m */; };
 		FA5D0A8E17E5AA9800577E21 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC6E17E4E8F1007DB23A /* SWRevealViewController.m */; };
 		FA5D0A8F17E5AA9E00577E21 /* IAPuzzleBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC7117E4E9B8007DB23A /* IAPuzzleBoard.m */; };
+		FA8A956B17EA7F23002B22FF /* CiudadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8A956A17EA7F23002B22FF /* CiudadCell.m */; };
 		FA98DC6F17E4E8F1007DB23A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC6E17E4E8F1007DB23A /* SWRevealViewController.m */; };
 		FA98DC7417E4E9B8007DB23A /* IAPuzzleBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC7117E4E9B8007DB23A /* IAPuzzleBoard.m */; };
 		FA98DC7517E4E9B8007DB23A /* IAPuzzleBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC7317E4E9B8007DB23A /* IAPuzzleBoardView.m */; };
 		FA98DC7817E4EBE0007DB23A /* TablaIndiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC7717E4EBE0007DB23A /* TablaIndiceViewController.m */; };
 		FAC7822417E633170006E578 /* IntroHijoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7822217E633170006E578 /* IntroHijoViewController.m */; };
 		FAC7822517E633170006E578 /* IntroHijoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC7822317E633170006E578 /* IntroHijoViewController.xib */; };
-		FAC7822A17E6BD910006E578 /* data_usuario.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAC7822917E6BD910006E578 /* data_usuario.plist */; };
+		FAC7822A17E6BD910006E578 /* datausuario.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAC7822917E6BD910006E578 /* datausuario.plist */; };
 		FAC7822D17E6CF9D0006E578 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7822C17E6CF9D0006E578 /* UIImage+Resize.m */; };
 		FAC7822E17E6D0220006E578 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7822C17E6CF9D0006E578 /* UIImage+Resize.m */; };
 /* End PBXBuildFile section */
@@ -134,6 +135,8 @@
 		FA5D0A8917E5A09100577E21 /* ComunidadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComunidadViewController.m; sourceTree = "<group>"; };
 		FA5D0A8B17E5A6EC00577E21 /* NoticiasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticiasViewController.h; sourceTree = "<group>"; };
 		FA5D0A8C17E5A6EC00577E21 /* NoticiasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticiasViewController.m; sourceTree = "<group>"; };
+		FA8A956917EA7F23002B22FF /* CiudadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CiudadCell.h; sourceTree = "<group>"; };
+		FA8A956A17EA7F23002B22FF /* CiudadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CiudadCell.m; sourceTree = "<group>"; };
 		FA98DC6D17E4E8F1007DB23A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		FA98DC6E17E4E8F1007DB23A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		FA98DC7017E4E9B8007DB23A /* IAPuzzleBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPuzzleBoard.h; sourceTree = "<group>"; };
@@ -147,7 +150,7 @@
 		FAC7822317E633170006E578 /* IntroHijoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroHijoViewController.xib; sourceTree = "<group>"; };
 		FAC7822617E65A3C0006E578 /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
 		FAC7822717E65A3C0006E578 /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
-		FAC7822917E6BD910006E578 /* data_usuario.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_usuario.plist; sourceTree = "<group>"; };
+		FAC7822917E6BD910006E578 /* datausuario.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = datausuario.plist; sourceTree = "<group>"; };
 		FAC7822B17E6CF9C0006E578 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
 		FAC7822C17E6CF9D0006E578 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -237,6 +240,7 @@
 				8FD7B25717E4D0C200C42776 /* AppDelegate.m */,
 				8FD7B25F17E4D0C200C42776 /* MainStoryboard.storyboard */,
 				8FD7B26217E4D0C200C42776 /* ViewController.h */,
+				FAC7822917E6BD910006E578 /* datausuario.plist */,
 				8FD7B26317E4D0C200C42776 /* ViewController.m */,
 				8FD7B24E17E4D0C200C42776 /* Supporting Files */,
 			);
@@ -262,7 +266,6 @@
 				8FD7B25917E4D0C200C42776 /* Default.png */,
 				8FD7B25B17E4D0C200C42776 /* Default@2x.png */,
 				8FD7B25D17E4D0C200C42776 /* Default-568h@2x.png */,
-				FAC7822917E6BD910006E578 /* data_usuario.plist */,
 				FA0B734317E913A20004BF4B /* ciudades.plist */,
 			);
 			name = "Supporting Files";
@@ -322,6 +325,8 @@
 				FAC7822317E633170006E578 /* IntroHijoViewController.xib */,
 				FAC7822617E65A3C0006E578 /* IntroViewController.h */,
 				FAC7822717E65A3C0006E578 /* IntroViewController.m */,
+				FA8A956917EA7F23002B22FF /* CiudadCell.h */,
+				FA8A956A17EA7F23002B22FF /* CiudadCell.m */,
 			);
 			name = Interfaz;
 			sourceTree = "<group>";
@@ -418,7 +423,7 @@
 				8FD7B25E17E4D0C200C42776 /* Default-568h@2x.png in Resources */,
 				8FD7B26117E4D0C200C42776 /* MainStoryboard.storyboard in Resources */,
 				FAC7822517E633170006E578 /* IntroHijoViewController.xib in Resources */,
-				FAC7822A17E6BD910006E578 /* data_usuario.plist in Resources */,
+				FAC7822A17E6BD910006E578 /* datausuario.plist in Resources */,
 				FA0B733617E8B9FC0004BF4B /* icono57.png in Resources */,
 				FA0B733817E90FA00004BF4B /* url.jpg in Resources */,
 				FA0B733C17E90FA70004BF4B /* ciudadAvatar.jpg in Resources */,
@@ -485,6 +490,7 @@
 				8F4B552417E796DC0014B891 /* NSActividad+NSActividad_Sistema.m in Sources */,
 				8F4B552717E79C880014B891 /* NSDiccionario+NSDiccionario_Sistema.m in Sources */,
 				8F4B552A17E79CD90014B891 /* NSLugar+NSLugar_Sistema.m in Sources */,
+				FA8A956B17EA7F23002B22FF /* CiudadCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

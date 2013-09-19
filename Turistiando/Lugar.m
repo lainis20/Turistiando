@@ -7,6 +7,7 @@
 //
 
 #import "Lugar.h"
+#import "Diccionario.h"
 
 @implementation Lugar
 
@@ -19,9 +20,9 @@
     self = [self init];
     if(self)
     {
-        _diccionario = [[Diccionario alloc] init];
-        _actividades = actividadesA;
-        _nombreL =nombreA;
+        diccionario = [[Diccionario alloc] initWithProperties];
+        actividades = actividadesA;
+        nombreL =nombreA;
     }
     
 return self;

@@ -20,7 +20,7 @@
 {
     self = [self init];
     if (self) {
-        _nombre=nombreA;
+        nombre=nombreA;
     }
 
 return self;

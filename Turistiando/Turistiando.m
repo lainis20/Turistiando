@@ -32,8 +32,8 @@ static Turistiando * instancia = nil;
 
 -(NSMutableArray *)lugares
 {
-    if(_lugares==nil) _lugares = [[NSMutableArray alloc]init];
-    return _lugares;
+    if(lugares==nil) lugares = [[NSMutableArray alloc]init];
+    return lugares;
 }
 
 -(void) setLugares:(NSMutableArray *)lugaresP
@@ -43,10 +43,10 @@ static Turistiando * instancia = nil;
 
 -(NSString*) nombre
 {
-    if (_nombre==nil||[_nombre isEqualToString:@""]) {
-        _nombre = @"Turista";
+    if (nombre==nil||[nombre isEqualToString:@""]) {
+        nombre = @"Turista";
     }
-    return _nombre;
+    return nombre;
 }
 
 
@@ -57,10 +57,10 @@ static Turistiando * instancia = nil;
 
 -(NSString*) nacio
 {
-    if (_nacio==nil||[_nacio isEqualToString:@""]) {
-        _nacio = @"Mundial";
+    if (nacio==nil||[nacio isEqualToString:@""]) {
+        nacio = @"Mundial";
     }
-    return _nacio;
+    return nacio;
 }
 
 -(void) setNacio:(NSString *)nacioP

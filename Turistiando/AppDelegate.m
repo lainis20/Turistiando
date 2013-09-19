@@ -7,48 +7,14 @@
 //
 
 #import "AppDelegate.h"
-#import "Turistiando.h"
-#import "Lugar.h"
-#import "Actividad.h"
-#import "Diccionario.h"
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSArray *rutaS = NSSearchPathForDirectoriesInDomains (NSDocumentationDirectory, NSUserDomainMask, YES);
-    NSString *rutaPlist =  [[rutaS objectAtIndex:0] stringByAppendingPathComponent:@"data_usuario.plist"];
-    
-    if (![[NSFileManager defaultManager] fileExistsAtPath:rutaPlist]) {
-        rutaPlist = [[NSBundle mainBundle] pathForResource:@"data_usuario" ofType:@"plist"];
-    }
-    
-    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:rutaPlist];
-    
-    NSError *error =nil;
-    NSPropertyListFormat format;
-    NSDictionary *temp = (NSDictionary *)[NSPropertyListSerialization propertyListWithData:plistXML options:NSPropertyListMutableContainersAndLeaves format:&format error:&error];
-    if (!temp)
-    {
-        NSLog(@"Error reading plist: %@, format: %d", error, format);
-    }
-    else
-    {
-        Turistiando *tour = [Turistiando darInstancia];
-        [tour setNombre:[temp objectForKey:@"nombre"]];
-        [tour setNacio:[temp objectForKey:@"nacionalidad"]];
-        NSArray *ciudades = [temp objectForKey:@"ciudades"];
-        NSArray *elementos = [temp objectForKey:@"elementos"];
-        for (int i = 0; i<[ciudades count]; i++ ) {
-            NSString * ciudS = [ciudades objectAtIndex:i];
-            NSMutableArray * activ = [NSMutableArray arrayWithCapacity:[[elementos objectAtIndex:i] count]];
-            for (NSString* ele in [elementos objectAtIndex:i]) {
-                [activ addObject:[[Actividad alloc] initWithParam:ele]];
-            }
-            [tour agregarLugar:[[Lugar alloc] initWithParam:activ conNombre:ciudS]];
-        }
-    }
-    return YES;
+      
+        return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

@@ -47,4 +47,7 @@
  */
 //-(NSMutableArray *)darActividadesNOrealizadas;
 
+-(id)initWithProperties;
+
+
 @end

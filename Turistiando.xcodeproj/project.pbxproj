@@ -51,6 +51,7 @@
 		FA5D0A8E17E5AA9800577E21 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC6E17E4E8F1007DB23A /* SWRevealViewController.m */; };
 		FA5D0A8F17E5AA9E00577E21 /* IAPuzzleBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC7117E4E9B8007DB23A /* IAPuzzleBoard.m */; };
 		FA8A956B17EA7F23002B22FF /* CiudadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8A956A17EA7F23002B22FF /* CiudadCell.m */; };
+		FA94469517EA93D5006AFD27 /* AgregarCiudadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA94469417EA93D5006AFD27 /* AgregarCiudadViewController.m */; };
 		FA98DC6F17E4E8F1007DB23A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC6E17E4E8F1007DB23A /* SWRevealViewController.m */; };
 		FA98DC7417E4E9B8007DB23A /* IAPuzzleBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC7117E4E9B8007DB23A /* IAPuzzleBoard.m */; };
 		FA98DC7517E4E9B8007DB23A /* IAPuzzleBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC7317E4E9B8007DB23A /* IAPuzzleBoardView.m */; };
@@ -137,6 +138,8 @@
 		FA5D0A8C17E5A6EC00577E21 /* NoticiasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticiasViewController.m; sourceTree = "<group>"; };
 		FA8A956917EA7F23002B22FF /* CiudadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CiudadCell.h; sourceTree = "<group>"; };
 		FA8A956A17EA7F23002B22FF /* CiudadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CiudadCell.m; sourceTree = "<group>"; };
+		FA94469317EA93D5006AFD27 /* AgregarCiudadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgregarCiudadViewController.h; sourceTree = "<group>"; };
+		FA94469417EA93D5006AFD27 /* AgregarCiudadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgregarCiudadViewController.m; sourceTree = "<group>"; };
 		FA98DC6D17E4E8F1007DB23A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		FA98DC6E17E4E8F1007DB23A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		FA98DC7017E4E9B8007DB23A /* IAPuzzleBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPuzzleBoard.h; sourceTree = "<group>"; };
@@ -325,6 +328,8 @@
 				FAC7822317E633170006E578 /* IntroHijoViewController.xib */,
 				FAC7822617E65A3C0006E578 /* IntroViewController.h */,
 				FAC7822717E65A3C0006E578 /* IntroViewController.m */,
+				FA94469317EA93D5006AFD27 /* AgregarCiudadViewController.h */,
+				FA94469417EA93D5006AFD27 /* AgregarCiudadViewController.m */,
 				FA8A956917EA7F23002B22FF /* CiudadCell.h */,
 				FA8A956A17EA7F23002B22FF /* CiudadCell.m */,
 			);
@@ -491,6 +496,7 @@
 				8F4B552717E79C880014B891 /* NSDiccionario+NSDiccionario_Sistema.m in Sources */,
 				8F4B552A17E79CD90014B891 /* NSLugar+NSLugar_Sistema.m in Sources */,
 				FA8A956B17EA7F23002B22FF /* CiudadCell.m in Sources */,
+				FA94469517EA93D5006AFD27 /* AgregarCiudadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

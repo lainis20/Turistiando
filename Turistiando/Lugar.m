@@ -20,9 +20,9 @@
     self = [self init];
     if(self)
     {
-        diccionario = [[Diccionario alloc] initWithProperties];
-        actividades = actividadesA;
-        nombreL =nombreA;
+        self.diccionario = [[Diccionario alloc] initWithProperties];
+        self.actividades = actividadesA;
+        self.nombreL =nombreA;
     }
     
 return self;

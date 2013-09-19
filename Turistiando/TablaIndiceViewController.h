@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TablaIndiceViewController : UITableViewController
+@interface TablaIndiceViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @property (strong, nonatomic) NSMutableArray * menu;
 @property (strong,nonatomic) NSArray *ciudadesU;
+@property (strong, nonatomic) IBOutlet UITableView *tablaO;
 
 @end

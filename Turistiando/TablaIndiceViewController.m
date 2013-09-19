@@ -24,6 +24,9 @@
 {
     [super viewDidLoad];
     self.menu = [NSMutableArray arrayWithArray:@[@"titulo",@"perfil", @"ciudades",@"ciudad",@"agregarCiudad", @"comunidad"]];
+    self.tablaO.dataSource = self;
+    self.tablaO.delegate = self;
+    
 	// Do any additional setup after loading the view.
 }
 
@@ -64,14 +67,17 @@
         NSUInteger da = [[tour lugares] count];
         NSUInteger da1 = da-indexPath.row;
         if (da==0) {
-            return nil;
+            cell1=(CiudadCell*)[tableView dequeueReusableCellWithIdentifier:cellI forIndexPath:indexPath];
+             cell1.lblNOmbre.text = @"Agrega una ciudad";
+            cell1.highlighted = NO;
+            [self.menu removeObject:cellI];
         }
         else
         {
             if (da1==-2) {
                  cell1=(CiudadCell*)[tableView dequeueReusableCellWithIdentifier:cellI forIndexPath:indexPath];
                 int rowM = indexPath.row -3;
-                cell.textLabel.text = [[[tour lugares] objectAtIndex:rowM] nombreL];
+                cell1.lblNOmbre.text= [[[tour lugares] objectAtIndex:rowM] nombreL];
                 [self.menu removeObject:cellI];
 
             }
@@ -79,15 +85,18 @@
             {
                 cell1 =(CiudadCell*)[tableView dequeueReusableCellWithIdentifier:cellI forIndexPath:indexPath];
                 int rowM = indexPath.row -3;
-                cell.textLabel.text = [[[tour lugares] objectAtIndex:rowM] nombreL];
+                NSString* holi = [[[tour lugares] objectAtIndex:rowM] nombreL];
+                cell1.lblNOmbre.text = holi;
             }
             
 
         }
+        return cell1;
     }
     else
     {
         cell = [tableView dequeueReusableCellWithIdentifier:cellI forIndexPath:indexPath];
+        cell.detailTextLabel.text= cellI;
         [self.menu removeObject:cellI];
 
     }
@@ -99,9 +108,18 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Set the title of navigation bar by using the menu items
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+
+
     UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
-    destViewController.title = [[self.menu objectAtIndex:indexPath.row] capitalizedString];
+        UITableViewCell *cell = [self.tablaO cellForRowAtIndexPath:[self.tablaO indexPathForSelectedRow]];
+    if ([cell isMemberOfClass:[CiudadCell class ]]) {
+        CiudadCell *ciu = (CiudadCell*) cell;
+        destViewController.title = ciu.lblNOmbre.text;
+    }
+    else
+    {
+        destViewController.title= cell.detailTextLabel.text;
+    }
     
 
     

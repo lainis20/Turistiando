@@ -47,6 +47,7 @@
         
         [place.diccionario addActividadesObject:nueva];
     }
+    return nil;
 }
 
 @end

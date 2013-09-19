@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
-@interface VerElementoDViewController : ViewController
+@interface VerElementoDViewController : ViewController<UITableViewDataSource,UITableViewDelegate>
+- (IBAction)recordar:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutlet UITableView *tablaExperiencias;
+@property (strong, nonatomic) IBOutlet UITextField *txtDescripcion;
 
 @end

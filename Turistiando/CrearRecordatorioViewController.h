@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CrearRecordatorioViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextField *txtNOmbre;
+@property (strong, nonatomic) IBOutlet UITextField *txtDes;
 
 @end

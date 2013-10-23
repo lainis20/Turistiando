@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <EventKit/EKEventStore.h>
 #import "Lugar.h"
 #import "Diccionario.h"
 

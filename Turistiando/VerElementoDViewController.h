@@ -6,12 +6,11 @@
 //  Copyright (c) 2013 Turistiando Colombia. All rights reserved.
 //
 
-#import "ViewController.h"
 
-@interface VerElementoDViewController : ViewController<UITableViewDataSource,UITableViewDelegate>
-- (IBAction)recordar:(UIButton *)sender;
+@interface VerElementoDViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tablaExperiencias;
 @property (strong, nonatomic) IBOutlet UITextField *txtDescripcion;
+@property (strong,nonatomic) UIImageView *fotoprevia;
 
 @end

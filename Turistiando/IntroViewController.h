@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Turistiando Colombia. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface IntroViewController : ViewController <UIPageViewControllerDataSource,UIPageViewControllerDelegate>
+@interface IntroViewController : UIViewController <UIPageViewControllerDataSource,UIPageViewControllerDelegate>
 
 @property (strong, nonatomic) UIPageViewController * pageC;
 

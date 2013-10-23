@@ -11,8 +11,6 @@
 @implementation Diccionario
 
 @synthesize actividades = _actividades;
-@synthesize actividadesRealizadas = _actividadesRealizadas;
-@synthesize actividadesNORealizadas = _actividadesNORealizadas;
 
 
 -(void)agregarActividad:(Actividad *) actividad
@@ -26,8 +24,7 @@
     self = [self init];
     if(self)
     {
-        actividades = [NSMutableArray arrayWithCapacity:15];
-        actividadesRealizadas = [NSMutableArray arrayWithCapacity:15];
+        actividades = [NSMutableArray arrayWithCapacity:1];
     }
 return self;
 }

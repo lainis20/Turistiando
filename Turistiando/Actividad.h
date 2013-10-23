@@ -13,7 +13,7 @@
     /*!
      Fecha de realizacion de la actividad 
      */
-    NSString *fecha;
+    NSData *fecha;
     
     /*!
      Nombre de la actividad
@@ -23,7 +23,7 @@
     /*!
      True si la actividad ha sido realizada, false de lo contrario
      */
-    BOOL *realizada;
+    BOOL realizada;
     
     /*!
      Representa la latitud de la actividad
@@ -36,9 +36,9 @@
     long *longitud;
 }
 
-@property (strong,nonatomic) NSString *fecha;
+@property (strong,nonatomic) NSData *fecha;
 @property (strong,nonatomic) NSString *nombre;
-@property (nonatomic) BOOL *realizada;
+@property (nonatomic) BOOL realizada;
 @property (nonatomic) long *latitud;
 @property (nonatomic) long *longitud;
 

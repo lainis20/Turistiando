@@ -6,9 +6,8 @@
 //  Copyright (c) 2013 Turistiando Colombia. All rights reserved.
 //
 
-#import "ViewController.h"
 
-@interface IntroHijoViewController : ViewController
+@interface IntroHijoViewController : UIViewController
 
 @property (assign,nonatomic) NSUInteger indice;
 @property (weak, nonatomic) IBOutlet UIButton *buttonE;

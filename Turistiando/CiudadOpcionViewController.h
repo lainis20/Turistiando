@@ -6,9 +6,8 @@
 //  Copyright (c) 2013 Turistiando Colombia. All rights reserved.
 //
 
-#import "ViewController.h"
 
-@interface CiudadOpcionViewController : ViewController
+@interface CiudadOpcionViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *buttonBarMenu;
 @end

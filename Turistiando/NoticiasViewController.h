@@ -6,9 +6,8 @@
 //  Copyright (c) 2013 Turistiando Colombia. All rights reserved.
 //
 
-#import "ViewController.h"
 
-@interface NoticiasViewController : ViewController
+@interface NoticiasViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *buttonBarMenu;
 @property (strong, nonatomic) IBOutlet UILabel *nombre;
 

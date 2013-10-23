@@ -21,6 +21,7 @@
     self = [self init];
     if (self) {
         self.nombre=nombreA;
+        self.realizada = NO;
     }
 
 return self;
@@ -28,17 +29,17 @@ return self;
 
 -(BOOL)darRealizada
 {
-    return NO;
+    return self.realizada;
 }
 
 -(long)darLatitud
 {
-    return 0;
+    return *(self.latitud);
 }
 
 -(long)darLongitud
 {
-   return 0;
+   return *(self.latitud);
 }
 
 @end

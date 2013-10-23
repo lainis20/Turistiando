@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <EventKit/EKEventStore.h>
 
 @interface CrearRecordatorioViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITextField *txtNOmbre;
-@property (strong, nonatomic) IBOutlet UITextField *txtDes;
+@property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (strong,nonatomic)  EKEventStore * eventStore;
 
 @end

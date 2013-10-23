@@ -29,7 +29,6 @@
 		8FD7B25C17E4D0C200C42776 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FD7B25B17E4D0C200C42776 /* Default@2x.png */; };
 		8FD7B25E17E4D0C200C42776 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FD7B25D17E4D0C200C42776 /* Default-568h@2x.png */; };
 		8FD7B26117E4D0C200C42776 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FD7B25F17E4D0C200C42776 /* MainStoryboard.storyboard */; };
-		8FD7B26417E4D0C200C42776 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7B26317E4D0C200C42776 /* ViewController.m */; };
 		8FD7B26C17E4D0C200C42776 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B26B17E4D0C200C42776 /* SenTestingKit.framework */; };
 		8FD7B26D17E4D0C200C42776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24717E4D0C200C42776 /* UIKit.framework */; };
 		8FD7B26E17E4D0C200C42776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7B24917E4D0C200C42776 /* Foundation.framework */; };
@@ -41,11 +40,11 @@
 		FA0B733617E8B9FC0004BF4B /* icono57.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0B733517E8B9FC0004BF4B /* icono57.png */; };
 		FA0B734017E912640004BF4B /* ComunidadAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0B733F17E912640004BF4B /* ComunidadAvatar.png */; };
 		FA0B734217E912AD0004BF4B /* donut.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FA0B734117E912AD0004BF4B /* donut.JPG */; };
-		FA0B734417E913A20004BF4B /* ciudades.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA0B734317E913A20004BF4B /* ciudades.plist */; };
 		FA0B734517E927270004BF4B /* Actividad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B8AB917E4EA6B003D40DB /* Actividad.m */; };
 		FA197A9817E5856B0000813D /* CiudadOpcionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA197A9717E5856B0000813D /* CiudadOpcionViewController.m */; };
 		FA197A9B17E5913F0000813D /* DiccionarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA197A9A17E5913F0000813D /* DiccionarioViewController.m */; };
 		FA1D96E017EB5E0E0050101D /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1D96DF17EB5E0E0050101D /* EventKit.framework */; };
+		FA31B1C118070FA400E284AC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA31B1C018070FA400E284AC /* MapKit.framework */; };
 		FA59FE8B17EAB82400565251 /* CrearExperienciaActivCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59FE8A17EAB82400565251 /* CrearExperienciaActivCell.m */; };
 		FA59FE8E17EAB84600565251 /* ExperianciaActivCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59FE8D17EAB84600565251 /* ExperianciaActivCell.m */; };
 		FA59FE9117EABD0E00565251 /* CrearRecordatorioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59FE9017EABD0E00565251 /* CrearRecordatorioViewController.m */; };
@@ -54,6 +53,7 @@
 		FA5D0A8D17E5A6EC00577E21 /* NoticiasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5D0A8C17E5A6EC00577E21 /* NoticiasViewController.m */; };
 		FA5D0A8E17E5AA9800577E21 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC6E17E4E8F1007DB23A /* SWRevealViewController.m */; };
 		FA5D0A8F17E5AA9E00577E21 /* IAPuzzleBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC7117E4E9B8007DB23A /* IAPuzzleBoard.m */; };
+		FA653C96180CDDAF009B80B3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA653C95180CDDAF009B80B3 /* MobileCoreServices.framework */; };
 		FA8A956B17EA7F23002B22FF /* CiudadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8A956A17EA7F23002B22FF /* CiudadCell.m */; };
 		FA94469517EA93D5006AFD27 /* AgregarCiudadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA94469417EA93D5006AFD27 /* AgregarCiudadViewController.m */; };
 		FA98DC6F17E4E8F1007DB23A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98DC6E17E4E8F1007DB23A /* SWRevealViewController.m */; };
@@ -114,8 +114,6 @@
 		8FD7B25B17E4D0C200C42776 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8FD7B25D17E4D0C200C42776 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8FD7B26017E4D0C200C42776 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		8FD7B26217E4D0C200C42776 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8FD7B26317E4D0C200C42776 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8FD7B26A17E4D0C200C42776 /* TuristiandoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuristiandoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD7B26B17E4D0C200C42776 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		8FD7B27317E4D0C200C42776 /* TuristiandoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TuristiandoTests-Info.plist"; sourceTree = "<group>"; };
@@ -129,12 +127,13 @@
 		FA0B733517E8B9FC0004BF4B /* icono57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icono57.png; path = ../icono57.png; sourceTree = "<group>"; };
 		FA0B733F17E912640004BF4B /* ComunidadAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ComunidadAvatar.png; sourceTree = "<group>"; };
 		FA0B734117E912AD0004BF4B /* donut.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = donut.JPG; sourceTree = "<group>"; };
-		FA0B734317E913A20004BF4B /* ciudades.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ciudades.plist; sourceTree = "<group>"; };
+		FA0B734317E913A20004BF4B /* ciudades.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ciudades.plist; path = /Users/macbook/Xcode/Turistiando/Turistiando/ciudades.plist; sourceTree = "<absolute>"; };
 		FA197A9617E5856B0000813D /* CiudadOpcionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CiudadOpcionViewController.h; sourceTree = "<group>"; };
 		FA197A9717E5856B0000813D /* CiudadOpcionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CiudadOpcionViewController.m; sourceTree = "<group>"; };
 		FA197A9917E5913F0000813D /* DiccionarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiccionarioViewController.h; sourceTree = "<group>"; };
 		FA197A9A17E5913F0000813D /* DiccionarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiccionarioViewController.m; sourceTree = "<group>"; };
 		FA1D96DF17EB5E0E0050101D /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		FA31B1C018070FA400E284AC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FA59FE8917EAB82400565251 /* CrearExperienciaActivCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrearExperienciaActivCell.h; sourceTree = "<group>"; };
 		FA59FE8A17EAB82400565251 /* CrearExperienciaActivCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrearExperienciaActivCell.m; sourceTree = "<group>"; };
 		FA59FE8C17EAB84500565251 /* ExperianciaActivCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExperianciaActivCell.h; sourceTree = "<group>"; };
@@ -147,6 +146,8 @@
 		FA5D0A8917E5A09100577E21 /* ComunidadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComunidadViewController.m; sourceTree = "<group>"; };
 		FA5D0A8B17E5A6EC00577E21 /* NoticiasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticiasViewController.h; sourceTree = "<group>"; };
 		FA5D0A8C17E5A6EC00577E21 /* NoticiasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticiasViewController.m; sourceTree = "<group>"; };
+		FA653C93180CDD0A009B80B3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FA653C95180CDDAF009B80B3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		FA8A956917EA7F23002B22FF /* CiudadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CiudadCell.h; sourceTree = "<group>"; };
 		FA8A956A17EA7F23002B22FF /* CiudadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CiudadCell.m; sourceTree = "<group>"; };
 		FA94469317EA93D5006AFD27 /* AgregarCiudadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgregarCiudadViewController.h; sourceTree = "<group>"; };
@@ -174,6 +175,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA653C96180CDDAF009B80B3 /* MobileCoreServices.framework in Frameworks */,
+				FA31B1C118070FA400E284AC /* MapKit.framework in Frameworks */,
 				FA1D96E017EB5E0E0050101D /* EventKit.framework in Frameworks */,
 				8F4B551E17E760CF0014B891 /* CoreData.framework in Frameworks */,
 				8FD7B24817E4D0C200C42776 /* UIKit.framework in Frameworks */,
@@ -210,6 +213,7 @@
 				8F4B551B17E75C830014B891 /* NSLugar.m */,
 				8F4B552817E79CD80014B891 /* NSLugar+NSLugar_Sistema.h */,
 				8F4B552917E79CD80014B891 /* NSLugar+NSLugar_Sistema.m */,
+				8F58098017E60E0100A66D40 /* ModelTuristiando.xcdatamodeld */,
 			);
 			name = Persistence;
 			sourceTree = "<group>";
@@ -235,6 +239,9 @@
 		8FD7B24617E4D0C200C42776 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA653C95180CDDAF009B80B3 /* MobileCoreServices.framework */,
+				FA653C93180CDD0A009B80B3 /* QuartzCore.framework */,
+				FA31B1C018070FA400E284AC /* MapKit.framework */,
 				FA1D96DF17EB5E0E0050101D /* EventKit.framework */,
 				8F4B551D17E760CF0014B891 /* CoreData.framework */,
 				8FD7B24717E4D0C200C42776 /* UIKit.framework */,
@@ -254,10 +261,7 @@
 				8FD7B25617E4D0C200C42776 /* AppDelegate.h */,
 				8FD7B25717E4D0C200C42776 /* AppDelegate.m */,
 				8FD7B25F17E4D0C200C42776 /* MainStoryboard.storyboard */,
-				8FD7B26217E4D0C200C42776 /* ViewController.h */,
 				FAC7822917E6BD910006E578 /* datausuario.plist */,
-				FA0B734317E913A20004BF4B /* ciudades.plist */,
-				8FD7B26317E4D0C200C42776 /* ViewController.m */,
 				8FD7B27117E4D0C200C42776 /* TuristiandoTests */,
 				8FD7B24E17E4D0C200C42776 /* Supporting Files */,
 			);
@@ -270,7 +274,6 @@
 				FA98DC6C17E4E7EE007DB23A /* libreriasOpen */,
 				8FD7B24F17E4D0C200C42776 /* Turistiando-Info.plist */,
 				8FD7B25017E4D0C200C42776 /* InfoPlist.strings */,
-				8F58098017E60E0100A66D40 /* ModelTuristiando.xcdatamodeld */,
 				FA0B734317E913A20004BF4B /* ciudades.plist */,
 				8FD7B25317E4D0C200C42776 /* main.m */,
 				8FD7B25517E4D0C200C42776 /* Turistiando-Prefix.pch */,
@@ -322,11 +325,15 @@
 			name = mundo;
 			sourceTree = "<group>";
 		};
-		FA98DC6B17E4E76F007DB23A /* Interfaz */ = {
+		FA1D96E117EB9DAD0050101D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				FA98DC7617E4EBE0007DB23A /* TablaIndiceViewController.h */,
 				FA98DC7717E4EBE0007DB23A /* TablaIndiceViewController.m */,
+				FAC7822617E65A3C0006E578 /* IntroViewController.h */,
+				FAC7822717E65A3C0006E578 /* IntroViewController.m */,
+				FA94469317EA93D5006AFD27 /* AgregarCiudadViewController.h */,
+				FA94469417EA93D5006AFD27 /* AgregarCiudadViewController.m */,
 				FA197A9617E5856B0000813D /* CiudadOpcionViewController.h */,
 				FA197A9717E5856B0000813D /* CiudadOpcionViewController.m */,
 				FA197A9917E5913F0000813D /* DiccionarioViewController.h */,
@@ -339,19 +346,31 @@
 				FA5D0A8C17E5A6EC00577E21 /* NoticiasViewController.m */,
 				FAC7822117E633170006E578 /* IntroHijoViewController.h */,
 				FAC7822217E633170006E578 /* IntroHijoViewController.m */,
-				FAC7822317E633170006E578 /* IntroHijoViewController.xib */,
-				FAC7822617E65A3C0006E578 /* IntroViewController.h */,
-				FAC7822717E65A3C0006E578 /* IntroViewController.m */,
-				FA94469317EA93D5006AFD27 /* AgregarCiudadViewController.h */,
-				FA94469417EA93D5006AFD27 /* AgregarCiudadViewController.m */,
+				FA59FE8F17EABD0E00565251 /* CrearRecordatorioViewController.h */,
+				FA59FE9017EABD0E00565251 /* CrearRecordatorioViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		FA1D96E217EB9DE80050101D /* Celas Tablas */ = {
+			isa = PBXGroup;
+			children = (
 				FA8A956917EA7F23002B22FF /* CiudadCell.h */,
 				FA8A956A17EA7F23002B22FF /* CiudadCell.m */,
 				FA59FE8917EAB82400565251 /* CrearExperienciaActivCell.h */,
 				FA59FE8A17EAB82400565251 /* CrearExperienciaActivCell.m */,
 				FA59FE8C17EAB84500565251 /* ExperianciaActivCell.h */,
 				FA59FE8D17EAB84600565251 /* ExperianciaActivCell.m */,
-				FA59FE8F17EABD0E00565251 /* CrearRecordatorioViewController.h */,
-				FA59FE9017EABD0E00565251 /* CrearRecordatorioViewController.m */,
+			);
+			name = "Celas Tablas";
+			sourceTree = "<group>";
+		};
+		FA98DC6B17E4E76F007DB23A /* Interfaz */ = {
+			isa = PBXGroup;
+			children = (
+				FA1D96E217EB9DE80050101D /* Celas Tablas */,
+				FA1D96E117EB9DAD0050101D /* ViewController */,
+				FAC7822317E633170006E578 /* IntroHijoViewController.xib */,
 			);
 			name = Interfaz;
 			sourceTree = "<group>";
@@ -452,7 +471,6 @@
 				FA0B733617E8B9FC0004BF4B /* icono57.png in Resources */,
 				FA0B734017E912640004BF4B /* ComunidadAvatar.png in Resources */,
 				FA0B734217E912AD0004BF4B /* donut.JPG in Resources */,
-				FA0B734417E913A20004BF4B /* ciudades.plist in Resources */,
 				8F6073A417EABAE700F8555C /* ciudadAvatar.jpg in Resources */,
 				8F6073A617EABAF700F8555C /* Monserrate.jpg in Resources */,
 				8F6073A817EABB0700F8555C /* RompeMotolaDeslizable.png in Resources */,
@@ -498,7 +516,6 @@
 				FA5D0A8E17E5AA9800577E21 /* SWRevealViewController.m in Sources */,
 				8FD7B25417E4D0C200C42776 /* main.m in Sources */,
 				8FD7B25817E4D0C200C42776 /* AppDelegate.m in Sources */,
-				8FD7B26417E4D0C200C42776 /* ViewController.m in Sources */,
 				8FD7B28517E4D67000C42776 /* Turistiando.m in Sources */,
 				8FD7B28817E4D84900C42776 /* Lugar.m in Sources */,
 				FA98DC7817E4EBE0007DB23A /* TablaIndiceViewController.m in Sources */,
@@ -635,6 +652,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Turistiando/Turistiando-Prefix.pch";
 				INFOPLIST_FILE = "Turistiando/Turistiando-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -646,6 +664,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Turistiando/Turistiando-Prefix.pch";
 				INFOPLIST_FILE = "Turistiando/Turistiando-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

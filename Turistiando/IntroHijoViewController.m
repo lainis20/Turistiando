@@ -34,13 +34,14 @@
 
 -(IBAction)quitar:(id)sender
 {
+    [self.txtNombre becomeFirstResponder];
     [self.txtNombre resignFirstResponder];
 }
 
 -(IBAction)quitarC:(id)sender
 {
+    [self.txtNacio becomeFirstResponder];
     [self.txtNacio resignFirstResponder];
-
 }
 
 

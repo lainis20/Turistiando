@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @interface ExperianciaActivCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UITextField *txtfield;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *calificacion;
+@property (strong, nonatomic) IBOutlet UIImageView *fotoEx;
+@property (strong, nonatomic) IBOutlet MKMapView *localizacion;
 
 @end

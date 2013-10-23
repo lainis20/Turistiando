@@ -35,6 +35,11 @@ return self;
     [self.diccionario agregarActividad:actividad];
 }
 
+-(void)agregarExperienciaAdiccionario:(Actividad *) actividad
+{
+    [self.diccionario agregarActividad:actividad];
+}
+
 -(NSMutableArray *)actividades;
 {
     if(_actividades==nil) _actividades = [[NSMutableArray alloc]init];
